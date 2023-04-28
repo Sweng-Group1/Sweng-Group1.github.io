@@ -26,7 +26,7 @@ nav a {
   font-weight: bold;
 }
 
-nav .logo {
+nav .logo a {
   padding: 0;
 }
 
@@ -156,7 +156,7 @@ body {
 
 /* Header section */
 header {
-  background-color: #ffe3b0;
+  background-color: #31394d;
   text-align: center;
   padding: 50px 20px;
 }

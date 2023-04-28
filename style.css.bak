@@ -16,12 +16,6 @@ nav {
   padding: 10px 20px;
 }
 
-nav img {
-  height: 40px;
-  margin-right: auto;
-  filter: invert(0%);
-}
-
 nav a {
   color: #000;
   text-decoration: none;
@@ -32,9 +26,23 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+nav .logo a {
+  padding: 0;
+}
+
+nav .logo img {
+  height: 40px;
+  filter: invert(0%);
+}
+
+nav .nav-button {
+  background-color: #371e49;
+}
+
+nav .nav-button:hover {
   background-color: #594379;
 }
+
 
 /* Default styles for all elements */
 * {
