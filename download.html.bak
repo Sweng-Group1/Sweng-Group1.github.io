@@ -9,22 +9,25 @@
 	  <a href="index.html"><img src="index_assets/LogoB.png" alt="Company Logo"></a>
   </div>
   <nav>
-    <div class="desktop-menu">
-	  <a href="download.html">Download</a>
-	  <a href="deliverables.html">Deliverables</a>
-	  <a href="pricing.html">Pricing</a>
-	  <a href="about.html">About</a>
-	</div>
-	<div class="mobile-menu">
-	  <button class="hamburger"><span></span><span></span><span></span></button>
-	  <div class="menu-items">
-		<a href="download.html">Download</a>
-		<a href="deliverables.html">Deliverables</a>
-		<a href="pricing.html">Pricing</a>
-		<a href="about.html">About</a>
-	  </div>
-	</div>
-  </nav>
+		<div class="logo">
+		  <img src="index_assets/LogoB.png" alt="Company Logo">
+		</div>
+		<div class="desktop-menu">
+		  <a href="download.html">Download</a>
+		  <a href="deliverables.html">Deliverables</a>
+		  <a href="pricing.html">Pricing</a>
+		  <a href="about.html">About</a>
+		</div>
+		<div class="mobile-menu">
+		  <button class="hamburger"><span></span><span></span><span></span></button>
+		  <div class="menu-items">
+			<a href="download.html">Download</a>
+			<a href="deliverables.html">Deliverables</a>
+			<a href="pricing.html">Pricing</a>
+			<a href="about.html">About</a>
+		  </div>
+		</div>
+	</nav>
 
   <main>
     <section class="description">
