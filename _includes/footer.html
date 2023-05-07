@@ -1,125 +1,13 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> | AppBar Ltd.</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
-    <!-- logo - start -->
-    <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
-        <img src="/assets/img/AppBarLogoB.png" loading="lazy" alt="AppBar Ltd. Logo" width="150" class="object-cover" />
-    </a>
-    <!-- logo - end -->
-    <!-- buttons - start -->
-    <nav class="hidden gap-5 lg:flex">
-
-        
-        
-            
-        
-            
-        
-            
-                <a href="/" class="hidden
-                    rounded-lg 
-                    px-8 py-3
-                    
-                    text-center text-sm font-semibold text-gray-500
-                    outline-none ring-indigo-300
-                    transition duration-100 hover:bg-gray-100 focus-visible:ring
-                    active:text-gray-700
-                    md:text-base lg:inline-block">Home</a>
-            
-        
-            
-                <a href="/about/" class="hidden
-                    rounded-lg 
-                    px-8 py-3
-                    
-                    text-center text-sm font-semibold text-gray-500
-                    outline-none ring-indigo-300
-                    transition duration-100 hover:bg-gray-100 focus-visible:ring
-                    active:text-gray-700
-                    md:text-base lg:inline-block">About</a>
-            
-        
-            
-                <a href="/pricing/" class="hidden
-                    rounded-lg 
-                    px-8 py-3
-                    
-                    text-center text-sm font-semibold text-gray-500
-                    outline-none ring-indigo-300
-                    transition duration-100 hover:bg-gray-100 focus-visible:ring
-                    active:text-gray-700
-                    md:text-base lg:inline-block">Pricing</a>
-            
-        
-            
-                <a href="/download/" class="hidden
-                    rounded-lg 
-                    px-8 py-3
-                    bg-gray-200
-                    text-center text-sm font-semibold text-gray-500
-                    outline-none ring-indigo-300
-                    transition duration-100 hover:bg-gray-300 focus-visible:ring
-                    active:text-gray-700
-                    md:text-base lg:inline-block">Download</a>
-            
-        
-    </nav>
-    <!-- buttons - end -->
-</header>
-    <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-
-    <div class="bg-white pt-4 sm:pt-10 lg:pt-12">
+<div class="bg-white pt-4 sm:pt-10 lg:pt-12">
     <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
             <!-- nav - start -->
             <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-                
-                    
-                
-                    
-                
-                    
-                        <a href="/" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Home</a>
-                    
-                
-                    
-                        <a href="/about/" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">About</a>
-                    
-                
-                    
-                        <a href="/pricing/" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Pricing</a>
-                    
-                
-                    
-                        <a href="/download/" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Download</a>
-                    
-                
+                {% for this_page in sorted_pages %}
+                    {% if this_page.navbar and this_page.navbar != -1 %}
+                        <a href="{{this_page.url}}" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 {% if this_page.url == page.url %}font-bold{% endif %}">{{this_page.title}}</a>
+                    {% endif %}
+                {% endfor %}
             </nav>
             <!-- nav - end -->
             <!-- social - start -->
@@ -150,5 +38,3 @@
         <div class="py-8 text-center text-sm text-gray-400">© 2023 - AppBar Ltd. All rights reserved.</div>
     </footer>
 </div>
-</body>
-</html>

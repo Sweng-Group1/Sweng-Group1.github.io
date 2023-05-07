@@ -3,6 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Introducing What's On
+title: Home
+banner: Introducing What's On
+navbar: 1
+permalink: /
 # type: page
 ---

@@ -1,0 +1,43 @@
+- name: Sidharth Shanmugam
+  role: Project Manager
+  portrait: custom_maps.svg
+
+- name: Fraser Todd
+  role: Software Manager
+  portrait: custom_maps.svg
+
+- name: Paul Pickering
+  role: QC Manager
+  portrait: custom_maps.svg
+
+- name: Jonathan Cooke
+  role: Documentation Manager / QA Tester
+  portrait: custom_maps.svg
+
+- name: Matteo Pearce
+  role: Finance Manager / Brand Champion
+  portrait: custom_maps.svg
+
+- name: Oliver Partridge
+  role: Comms Manager / UI Designer / Brand Champion
+  portrait: custom_maps.svg
+
+- name: Sophie Maw
+  role: Marketing and Design Manager
+  portrait: custom_maps.svg
+
+- name: Srikanth Jakka
+  role: VC Manager
+  portrait: custom_maps.svg
+
+- name: Sarujan Thevathasan
+  role: UI Designer / Brand Champion
+  portrait: custom_maps.svg
+
+- name: Will Hinton
+  role: QA Tester
+  portrait: custom_maps.svg
+
+- name: Luke George
+  role: Accountant
+  portrait: custom_maps.svg
