@@ -1,0 +1,20 @@
+- name: Pierrick Roger
+  role: YUSU President
+  portrait_img_name: Pierrick.webp
+  logo_img_name: YUSU.png
+  quote: |
+    I'll put the comment that he writes in the declaration of interest here.
+
+- name: Tony Ward
+  role: Financial Backer
+  portrait_img_name: Tony.jpeg
+  logo_img_name: YUSU.png
+  quote: |
+    If we can put a testimony from Tony as the finance backer...
+
+- name: Phil Lightfoot
+  role: Deputy Head of School
+  portrait_img_name: Pierrick.webp
+  logo_img_name: YUSU.png
+  quote: |
+    ...and we have another one from a society pres, this'll look great.

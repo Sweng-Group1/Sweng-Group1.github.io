@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /about/
-banner: Introducing What's On
-subtitle: Unlock the power of proximity with an exclusive social platform.
+banner: Unlock the power of proximity
+subtitle: Our Mission
 navbar: 2
 ---
