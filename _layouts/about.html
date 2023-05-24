@@ -31,6 +31,31 @@ layout: page
 	</div>
 </div>
 
+<div class="bg-gray-100 pb-6 sm:pb-8 lg:py-12">
+	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+		<p class="mb-2 pt-4 font-semibold text-indigo-500 md:mb-3 lg:text-lg">
+			A case study
+		</p>
+  
+	  	<h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+			Empowering university students and unions
+		</h2>
+	
+        <p class="mb-12 text-gray-500 font-bold md:text-lg">
+            Thousands of freshers every year plunge themselves through a baptism of fire to adjust to unfamiliar surroundings and a whole new way of life. With communities of 10s of thousands of people and sprawling campuses, it is common to feel overcome by the dreaded feeling of “what the hell is going on?”. With this in mind, we have created a platform that Unions can use to display on a map every event happening on campus, that even the most inexperienced users of Google Maps will find immediately intuitive. 
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 lg:gap-y-2">
+            <p class="max-w-screen-md text-gray-500 md:text-lg">
+                The first iteration of What's On: has been designed with university Students' Unions in mind as a starting point, as it made tremendous sense to us, and provided the perfect launchpad from which our app can take off. This is just the start, however, as What's On: lends itself to so many businesses we would need two websites just to list them all. Theme parks, Offices, Town Centres, Cities, Museums, and even Schools! Wherever and whatever can be shown on a map deserves its own What's On: platform. 
+            </p>
+            <p class="max-w-screen-md text-gray-500 md:text-lg">
+                If you feel like you've been using What's On: since forever as soon as you login, don't be surprised! We have especially designed the look and feel to reflect your favourite and most used apps. What's On: can be seamlessly re-skinned to represent any organisation, and our dedicated design team are happy to make your platform unique to you. With competitive monthly rates, signing up is easier than ever! Whatever your business, your clients deserve to know what's on, and we're here to help.
+            </p>
+        </div>
+	</div>
+</div>
+
 <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="mx-auto max-w-screen-xl px-4 md:px-8">
         <!-- text - start -->
@@ -38,9 +63,6 @@ layout: page
             <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
                 Brought to you by the AppBar team
             </h2>
-            <!-- <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper laoreet mauris sed ultrices.
-            </p> -->
         </div>
         <!-- text - end -->
         <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
@@ -57,28 +79,98 @@ layout: page
             </div>
             <!-- person - end -->
             {% endfor %}
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                <div class="my-auto">
+                    <div class="text-center font-bold text-gray-800 md:text-3xl">The Departments...</div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                    <img src="{{site.baseurl}}/assets/img/about/team/software-dev.jpeg" loading="lazy" alt="Software Dev" class="h-full w-full object-cover object-center" />
+                </div>
+                <div>
+                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Software Development Team</div>
+                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
+                        <b>Client-Side:</b> our team of intrepid developers has brought our vision to life, implementing the main app and all its interactive features. 
+                    </p>
+                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
+                        <b>Server-Side:</b> these developers are masters of the dark arts, and have implemented seamless communication between the servers storing all the user information with the app at your fingertips.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                    <img src="{{site.baseurl}}/assets/img/about/team/software-test.jpeg" loading="lazy" alt="Software Test" class="h-full w-full object-cover object-center" />
+                </div>
+                <div>
+                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Software Testing Team</div>
+                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
+                        Remember when that project worked perfectly the first time? Neither do we, that's why we have a team of dedicated testers who ensure that every snippet of code works as intended. 
+                    </p>
+                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
+                        Our integration team makes sure that client and server-side software match up like bread and butter.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                    <img src="{{site.baseurl}}/assets/img/about/team/documentation.jpeg" loading="lazy" alt="Documentation" class="h-full w-full object-cover object-center" />
+                </div>
+                <div>
+                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Documentation Team</div>
+                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
+                        Just like visiting your nan, boring things in life are a necessary evil. Luckily for us, we have a team dedicated to making sure our paperwork is in order, and that the t's are crossed, and the i's dotted.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                    <img src="{{site.baseurl}}/assets/img/about/team/marketing.jpeg" loading="lazy" alt="Marketing" class="h-full w-full object-cover object-center" />
+                </div>
+                <div>
+                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Marketing Team</div>
+                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
+                        Whilst the rest of us sit in our dungeon crunching code, the marketing team ensures that the face of our operation is clean-shaven and ready to impress, devising strategies to enter into new markets and appeal to all walks of life.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                    <img src="{{site.baseurl}}/assets/img/about/team/finance.jpeg" loading="lazy" alt="Finance" class="h-full w-full object-cover object-center" />
+                </div>
+                <div>
+                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Finance Team</div>
+                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
+                        Whilst competing with the Documentation team for the crown of “Most Boring”, the Finance department brings a dose of common sense to the team, continuously assessing our financial progress and computing the feasibility of future projects.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 
 
 <div class="bg-white pb-6 sm:pb-8 lg:py-12">
-	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div class="text-gray-600 body-font relative">
-            <div class="absolute inset-0 bg-gray-300 pointer-events-none">
-              <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4736580077524!2d-1.0552596758409416!3d53.94609957536512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48793033f3156963%3A0x3bd499f2010024d7!2sPhysics%20and%20Electronic%20Engineering%20Buildings!5e0!3m2!1sen!2suk!4v1683463335103!5m2!1sen!2suk" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
-            </div>
-            <div class="container px-5 py-24 mx-auto flex">
-              <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-[32rem] md:mt-0 relative z-10 shadow-md">
-                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Contact Us</h2>
-                <p class="leading-relaxed font-semibold mb-1 text-gray-600">AppBar Ltd.</p>
-                <p class="leading-relaxed mb-1 text-gray-600">School of Physics, Engineering and Technology</p>
-                <p class="leading-relaxed mb-1 text-gray-600">University of York</p>
-                <p class="leading-relaxed mb-1 text-gray-600">Heslington</p>
-                <p class="leading-relaxed mb-1 text-gray-600">York</p>
-                <p class="leading-relaxed mb-1 text-gray-600">YO10 5DD</p>
-                <p class="leading-relaxed mb-1 text-gray-600">United Kingdom</p>
-              </div>
+    <div class="text-gray-600 body-font relative">
+        <div class="absolute inset-0 bg-gray-300 pointer-events-none">
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4736580077524!2d-1.0552596758409416!3d53.94609957536512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48793033f3156963%3A0x3bd499f2010024d7!2sPhysics%20and%20Electronic%20Engineering%20Buildings!5e0!3m2!1sen!2suk!4v1683463335103!5m2!1sen!2suk" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+            <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-[32rem] md:mt-0 relative z-10 shadow-md">
+            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Contact Us</h2>
+            <p class="leading-relaxed font-semibold mb-1 text-gray-600">AppBar Ltd.</p>
+            <p class="leading-relaxed mb-1 text-gray-600">School of Physics, Engineering and Technology</p>
+            <p class="leading-relaxed mb-1 text-gray-600">University of York</p>
+            <p class="leading-relaxed mb-1 text-gray-600">Heslington</p>
+            <p class="leading-relaxed mb-1 text-gray-600">York</p>
+            <p class="leading-relaxed mb-1 text-gray-600">YO10 5DD</p>
+            <p class="leading-relaxed mb-1 text-gray-600">United Kingdom</p>
             </div>
         </div>
     </div>
