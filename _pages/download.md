@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: download
 title: Download
 permalink: /download/
+banner: Download project files
+subtitle: Download
 navbar: 9
 ---
 
