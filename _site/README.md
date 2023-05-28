@@ -25,6 +25,27 @@ IMPORTANT: If you make any changes to the website and want to commit to this rep
 During submission, we only need the `_site` directory for this, we can safely ignore the rest of the files as long as `jekyll b` has been run and the `_site` directory is up to date, and we can also rename the `_site` directory to whatever we want (within reason).
 
 ### Home Page
+#### index.md
+Open the `_pages/index.md` file. The `banner` is the text that shows in the browser tab. The `subtitle` is shown above the `Take a tour` button.
+#### Introduction Section
+Open the `_data/home/introduction.yml` file and change contents:
+```
+title: The title content
+subtitle: Introducing What's On&#58;
+content: |
+  Some content...
+```
+#### Testimonials
+Open the `_data/home/features.yml` file and add content:
+```
+- name: Name OF Person
+  role: Role
+  portrait_img_name: image.jpg
+  logo_img_name: YUSU.png
+  quote: |
+    We are very interested in this product and think it would bring a lot of value to the student body and their interest groups. Very exciting!
+```
+The image needs to be pasted in the `assets/img/home/testimonials` directory.
 #### Features Grid
 Open the `_data/home/features.yml` file and add content:
 ```
@@ -36,6 +57,27 @@ Open the `_data/home/features.yml` file and add content:
 The image needs to be pasted in the `assets/img/home/features` directory.
 
 ### About Page
+#### about.md
+Open the `_pages/about.md` file. The `banner` is the text that shows in the browser tab and above the subtitle. The `subtitle` is shown in the grey box at the top of the page.
+#### Introduction Section
+Open the `_data/about/introduction.yml` file and change contents:
+```
+title: The title content
+subtitle: Introducing What's On&#58;
+content: |
+  Some content...
+```
+#### Case Study
+Open the `_data/about/casestudy.yml` file and change contents:
+```
+title: Empowering university students and unions
+bold_content: |
+  This para will span two columns and will be bold.
+first_column: |
+  Left column under the bold content.
+second_column: |
+  Right column under the bold section.
+```
 #### Team Directory
 Open the `_data/about/team.yml` file and add content:
 ```
@@ -44,7 +86,47 @@ Open the `_data/about/team.yml` file and add content:
   portrait: portrait.svg
 ```
 The portrait image needs to be pasted in the `assets/img/about/team` directory.
+#### Department Directory
+Open the `_data/about/departments.yml` file and add content:
+```
+- name: Team Name
+  portrait: custom_maps.svg
+  description:
+    - A paragraph
+    - Another paragraph is needed.
+    - have as many paras, it's just a forloop in the html
+```
+The portrait image needs to be pasted in the `assets/img/about/team` directory.
 
+### Pricing Page
+#### pricing.md
+Open the `_pages/pricing.md` file. The `banner` is the text that shows in the browser tab and above the subtitle. The `subtitle` is shown in the grey box at the top of the page.
+#### Introduction Section
+Open the `_data/pricing/introduction.yml` file and change contents:
+```
+title: The title content
+subtitle: Introducing What's On&#58;
+content: |
+  Some content...
+```
+#### Pricing Tables
+Open the `_data/pricing/pricing.yml` file and change contents. This will change the description of each grid item in the pricing table.
+
+### Downloads Page
+#### downloads.md
+Open the `_pages/downloads.md` file. The `banner` is the text that shows in the browser tab and above the subtitle. The `subtitle` is shown in the grey box at the top of the page.
+#### Introduction Section
+Open the `_data/downloads/introduction.yml` file and change contents:
+```
+title: The title content
+subtitle: Introducing What's On&#58;
+content: |
+  Some content...
+```
+#### Download Sections
+Open the files `_data/downloads/***_downloads.yml`, replace `***` with the respective department.
+
+It's self-explanatory, open the file and figure it out urself, i cba to explain it.
 ## Contributing
 I will be refactoring the website so that any required content changes can be carried out via `.yml` files without having to manually modify the HTML stuff. This will be completed soonish (as soon as I have finalised on the overall website content structure with Jon and Matteo).
 

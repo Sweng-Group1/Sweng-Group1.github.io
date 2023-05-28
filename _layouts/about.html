@@ -5,27 +5,21 @@ layout: page
 <div class="bg-white pb-6 sm:pb-8 lg:py-12">
 	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
 		<p class="mb-2 font-semibold text-indigo-500 md:mb-3 lg:text-lg">
-			Amplify your presence with What's On:
+			{{ site.data.about.introduction.subtitle }}
 		</p>
   
 	  	<h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-			Revolutionise the way your business operates and thrives
+			{{ site.data.about.introduction.title }}
 		</h2>
 	
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
 
             <p class="max-w-screen-md text-gray-500 md:text-lg">
-                <b>Immerse visitors into the pulse of your campus</b> with our unique heatmap feature, allowing your clients to gauge the
-                areas of highest activity and discover trending spots. But <b>What's On: is not just about exploring — it's about active
-                participation.</b> Users can log in to the app and create their own posts, ehether it's a hidden gem, a must-see event,
-                or a great dining spot, the power is in their hands to share and connect with others.
+                {{ site.data.about.introduction.first_column }}
             </p>
 
             <p class="max-w-screen-md text-gray-500 md:text-lg">
-                <b>What's On: gives you full control over your business.</b> With our "verified" posts feature, you can create
-                attention-grabbing announcements and event promotions. Drive foot traffic, boost engagement, and captivate your
-                audience with verified updates that stand out from the crowd. Curate content and cultivate a safe environment built-in
-                moderation features.
+                {{ site.data.about.introduction.second_column }}
             </p>
         </div>
 	</div>
@@ -38,19 +32,19 @@ layout: page
 		</p>
   
 	  	<h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-			Empowering university students and unions
+			{{ site.data.about.casestudy.title }}
 		</h2>
 	
         <p class="mb-12 text-gray-500 font-bold md:text-lg">
-            Thousands of freshers every year plunge themselves through a baptism of fire to adjust to unfamiliar surroundings and a whole new way of life. With communities of 10s of thousands of people and sprawling campuses, it is common to feel overcome by the dreaded feeling of “what the hell is going on?”. With this in mind, we have created a platform that Unions can use to display on a map every event happening on campus, that even the most inexperienced users of Google Maps will find immediately intuitive. 
+            {{ site.data.about.introduction.bold_content }}
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 lg:gap-y-2">
             <p class="max-w-screen-md text-gray-500 md:text-lg">
-                The first iteration of What's On: has been designed with university Students' Unions in mind as a starting point, as it made tremendous sense to us, and provided the perfect launchpad from which our app can take off. This is just the start, however, as What's On: lends itself to so many businesses we would need two websites just to list them all. Theme parks, Offices, Town Centres, Cities, Museums, and even Schools! Wherever and whatever can be shown on a map deserves its own What's On: platform. 
+                {{ site.data.about.introduction.first_column }}
             </p>
             <p class="max-w-screen-md text-gray-500 md:text-lg">
-                If you feel like you've been using What's On: since forever as soon as you login, don't be surprised! We have especially designed the look and feel to reflect your favourite and most used apps. What's On: can be seamlessly re-skinned to represent any organisation, and our dedicated design team are happy to make your platform unique to you. With competitive monthly rates, signing up is easier than ever! Whatever your business, your clients deserve to know what's on, and we're here to help.
+                {{ site.data.about.introduction.second_column }}
             </p>
         </div>
 	</div>
@@ -85,72 +79,21 @@ layout: page
                 </div>
             </div>
 
+            {% for department in site.data.about.departments %}
             <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
                 <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-                    <img src="{{site.baseurl}}/assets/img/about/team/software-dev.jpeg" loading="lazy" alt="Software Dev" class="h-full w-full object-cover object-center" />
+                    <img src="{{site.baseurl}}/assets/img/about/team/{{ department.portrait }}" loading="lazy" alt="{{ department.name }} Portrait" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Software Development Team</div>
+                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ department.name }}</div>
+                    {% for description in department.description %}
                     <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
-                        <b>Client-Side:</b> our team of intrepid developers has brought our vision to life, implementing the main app and all its interactive features. 
+                        {{ description }}
                     </p>
-                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
-                        <b>Server-Side:</b> these developers are masters of the dark arts, and have implemented seamless communication between the servers storing all the user information with the app at your fingertips.
-                    </p>
+                    {% endfor %}
                 </div>
             </div>
-
-            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
-                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-                    <img src="{{site.baseurl}}/assets/img/about/team/software-test.jpeg" loading="lazy" alt="Software Test" class="h-full w-full object-cover object-center" />
-                </div>
-                <div>
-                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Software Testing Team</div>
-                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
-                        Remember when that project worked perfectly the first time? Neither do we, that's why we have a team of dedicated testers who ensure that every snippet of code works as intended. 
-                    </p>
-                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
-                        Our integration team makes sure that client and server-side software match up like bread and butter.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
-                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-                    <img src="{{site.baseurl}}/assets/img/about/team/documentation.jpeg" loading="lazy" alt="Documentation" class="h-full w-full object-cover object-center" />
-                </div>
-                <div>
-                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Documentation Team</div>
-                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
-                        Just like visiting your nan, boring things in life are a necessary evil. Luckily for us, we have a team dedicated to making sure our paperwork is in order, and that the t's are crossed, and the i's dotted.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
-                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-                    <img src="{{site.baseurl}}/assets/img/about/team/marketing.jpeg" loading="lazy" alt="Marketing" class="h-full w-full object-cover object-center" />
-                </div>
-                <div>
-                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Marketing Team</div>
-                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
-                        Whilst the rest of us sit in our dungeon crunching code, the marketing team ensures that the face of our operation is clean-shaven and ready to impress, devising strategies to enter into new markets and appeal to all walks of life.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
-                <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
-                    <img src="{{site.baseurl}}/assets/img/about/team/finance.jpeg" loading="lazy" alt="Finance" class="h-full w-full object-cover object-center" />
-                </div>
-                <div>
-                    <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Finance Team</div>
-                    <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
-                        Whilst competing with the Documentation team for the crown of “Most Boring”, the Finance department brings a dose of common sense to the team, continuously assessing our financial progress and computing the feasibility of future projects.
-                    </p>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
     </div>
 </div>

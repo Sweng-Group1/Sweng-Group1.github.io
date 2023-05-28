@@ -1,0 +1,76 @@
+- category:
+  image: software-test.jpeg
+  title: Presentations
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Design Documentation
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  
+- category:
+  image: software-test.jpeg
+  title: Branding
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: YUSU Declaration of Interest
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Surveys
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Development Assets
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: HTML Tour Planning
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt

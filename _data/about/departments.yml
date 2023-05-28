@@ -1,0 +1,26 @@
+- name: Software Development Team
+  portrait: software-dev.jpeg
+  description:
+    - <b>Client-Side&#58;</b> our team of intrepid developers has brought our vision to life, implementing the main app and all its interactive features.
+    - <b>Server-Side&#58;</b> these developers are masters of the dark arts, and have implemented seamless communication between the servers storing all the user information with the app at your fingertips.
+
+- name: Software Testing Team
+  portrait: software-test.jpeg
+  description:
+    - Remember when that project worked perfectly the first time? Neither do we, that's why we have a team of dedicated testers who ensure that every snippet of code works as intended.
+    - Our integration team makes sure that client and server-side software match up like bread and butter.
+
+- name: Documentation Team
+  portrait: documentation.jpeg
+  description:
+    - Just like visiting your nan, boring things in life are a necessary evil. Luckily for us, we have a team dedicated to making sure our paperwork is in order, and that the t's are crossed, and the i's dotted.
+
+- name: Marketing Team
+  portrait: marketing.jpeg
+  description:
+    - Whilst the rest of us sit in our dungeon crunching code, the marketing team ensures that the face of our operation is clean-shaven and ready to impress, devising strategies to enter into new markets and appeal to all walks of life.
+
+- name: Finance Team
+  portrait: finance.jpeg
+  description:
+    - Whilst competing with the Documentation team for the crown of “Most Boring”, the Finance department brings a dose of common sense to the team, continuously assessing our financial progress and computing the feasibility of future projects.

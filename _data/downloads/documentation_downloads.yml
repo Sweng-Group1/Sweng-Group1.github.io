@@ -1,0 +1,65 @@
+- category:
+  image: software-test.jpeg
+  title: Commenting Exemplar
+  files:
+  - file:
+    name: This is a test doc
+    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+  - file:
+    name: This is a test doc
+    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+
+- category:
+  image: software-test.jpeg
+  title: Documentation Admin
+  files:
+  - file:
+    name: This is a test doc
+    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+  - file:
+    name: This is a test doc
+    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+  
+- category:
+  image: software-test.jpeg
+  title: First Iteration
+  files:
+  - file:
+    name: This is a test doc
+    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+  - file:
+    name: This is a test doc
+    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+
+- category:
+  image: software-test.jpeg
+  title: QA Manual
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: User Manual
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Archive
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt

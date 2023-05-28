@@ -17,7 +17,7 @@ layout: default
 				<!-- <p class="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8">Very proud to introduce</p> -->
 				<img src="{{site.baseurl}}/assets/img/home/WhatsOnLogo.png" loading="lazy" alt="What's On Logo" class="object-cover md:mb-8 w-64" />
 				<!-- <h1 class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">Revolutionary way to build the web</h1> -->
-				<h1 class="mb-4 text-center text-lg font-black text-orange-200 sm:text-3xl md:mb-8 font-empasis">Unlock the power of proximity with an exclusive social platform</h1>
+				<h1 class="mb-4 text-center text-lg font-black text-orange-200 sm:text-3xl md:mb-8 font-empasis">{{ page.subtitle }}</h1>
 				<div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
 					<a href="#features" class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Take a tour</a>
 				</div>
@@ -31,16 +31,15 @@ layout: default
 <div class="bg-white pb-6 sm:pb-8 lg:py-12">
 	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
 		<p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">
-			Introducing What's On:
+			{{ site.data.home.introduction.subtitle }}
 		</p>
   
 	  	<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-			The ultimate campus companion for business
+			{{ site.data.home.introduction.title }}
 		</h2>
 	
 		<p class="mx-auto max-w-screen-md text-gray-500 md:text-lg text-center">
-			Whether you're a theme park, university, or any bustling campus, our powerful app is designed engauge your visitors and clients.
-			With its intuitive map interface, What's On: provides a dynamic and interactive experience, giving users a real-time snapshot of the campus.
+			{{ site.data.home.introduction.content }}
 		</p>
 	</div>
 </div>

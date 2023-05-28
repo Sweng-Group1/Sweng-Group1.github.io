@@ -1,0 +1,30 @@
+- category:
+  image: software-test.jpeg
+  title: Functional Specification
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+- category:
+  image: software-test.jpeg
+  title: Ideation
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+- category:
+  image: software-test.jpeg
+  title: Planning
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt

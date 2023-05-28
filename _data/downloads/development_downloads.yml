@@ -1,0 +1,65 @@
+- category:
+  image: software-test.jpeg
+  title: Client App
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Server Software
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  
+- category:
+  image: software-test.jpeg
+  title: Example Multimedia Presentations
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Intergroup Contracts
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Project Wide Specification (PWS)
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Version Control
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt

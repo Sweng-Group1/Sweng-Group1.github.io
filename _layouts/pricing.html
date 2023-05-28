@@ -5,21 +5,21 @@ layout: page
 <div class="bg-white pb-6 sm:pb-8 lg:py-12">
 	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
 		<p class="mb-2 font-semibold text-indigo-500 md:mb-3 lg:text-lg">
-			Competitive pricing, unmatched potential
+			{{ site.data.pricing.introduction.subtitle }}
 		</p>
   
 	  	<h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-			You're just one step away from evolving your business
+			{{ site.data.pricing.introduction.title }}
 		</h2>
 	
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
 
             <p class="max-w-screen-md text-gray-500 md:text-lg">
-                What's On: requires a monthly membership plan, allocating a tier based to the number of registered users on your platform. Payments are made on the first of each month, and you will only change tiers from the 1st of the next month after your client base surpasses the upper threshold of your current tier.
+                {{ site.data.pricing.introduction.first_column }}
             </p>
 
             <p class="max-w-screen-md text-gray-500 md:text-lg">
-                When you join us, you get to decide what your platform will look and feel like with various app reskin packages. You also have the freedom to use the default Whats On: logos and colour scheme free of charge. Our design team is here to help you make your platform stand out with any design features you desire.
+                {{ site.data.pricing.introduction.second_column }}
             </p>
         </div>
 	</div>
@@ -35,7 +35,7 @@ layout: page
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
                         <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 1</div>
-                        <p class="mb-8 px-8 text-center text-gray-500">For small organisations with fewer visitors</p>
+                        <p class="mb-8 px-8 text-center text-gray-500">{{ site.data.pricing.pricing.tier1_description }}</p>
                         <div class="space-y-4">
                             <!-- check - start -->
                             <div class="flex items-center gap-2">
@@ -60,7 +60,7 @@ layout: page
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
                         <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 2</div>
-                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">Perfect for a medium-sized organisation with potential to grow</p>
+                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">{{ site.data.pricing.pricing.tier2_description }}</p>
                         <div class="space-y-4">
                             <!-- check - start -->
                             <div class="flex items-center gap-2">
@@ -85,7 +85,7 @@ layout: page
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
                         <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 3</div>
-                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">Great for mature businesses with massive campuses</p>
+                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">{{ site.data.pricing.pricing.tier3_description }}/p>
                         <div class="space-y-4">
                             <!-- check - start -->
                             <div class="flex items-center gap-2">
@@ -109,7 +109,7 @@ layout: page
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-0">
                         <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 3+</div>
-                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">Reached Tier 3 but need to accomodate users? You can increase your user limit with ease.</p>
+                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">{{ site.data.pricing.pricing.tier3plus_description }}</p>
                     </div>
                     <div class="mt-auto mx-auto lg:w-1/4">
                         <a class="block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">£2.99 per person pcm</a>
@@ -131,7 +131,7 @@ layout: page
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
                         <div class="mb-2 text-center text-2xl font-bold text-gray-800">Basic Reskin</div>
-                        <p class="mb-8 px-8 text-center text-gray-500">Your business logos and colour schemes can be implemented into the client UI</p>
+                        <p class="mb-8 px-8 text-center text-gray-500">{{ site.data.pricing.pricing.basic_reskin_description }}</p>
                     </div>
                     <div class="mt-auto">
                         <a class="block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">£100 upfront</a>
@@ -145,7 +145,7 @@ layout: page
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
                         <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tailored Reskin</div>
-                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">In-app designers will design logos and colour schemes for the client app UI as per your business requests</p>
+                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">{{ site.data.pricing.pricing.tailored_reskin_description }}</p>
                     </div>
                     <div class="mt-auto">
                         <a class="block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">£1,000 upfront</a>
@@ -158,8 +158,8 @@ layout: page
                 <div class="h-2 bg-gray-500"></div>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Advertisment Support</div>
-                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">We can implement functionality for your business to monetise your What's On: platform by running ads from trusted providers such as Google Adsense.</p>
+                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Advertisement Support</div>
+                        <p class="mx-auto mb-8 px-8 text-center text-gray-500">{{ site.data.pricing.pricing.ad_support_description }}</p>
                     </div>
                     <div class="mt-auto">
                         <a class="block rounded-lg bg-gray-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none transition duration-100 focus-visible:ring md:text-base">Coming soon...</a>

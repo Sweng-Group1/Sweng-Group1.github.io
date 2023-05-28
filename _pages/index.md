@@ -1,9 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: Home
-banner: Introducing What's On
+banner: Introducing What's On&#58;
+subtitle: Unlock the power of proximity with an exclusive social platform
 navbar: 1
 ---

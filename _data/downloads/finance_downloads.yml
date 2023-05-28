@@ -1,0 +1,44 @@
+- category:
+  image: software-test.jpeg
+  title: Financial Business Plan
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Financial Reports
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  
+- category:
+  image: software-test.jpeg
+  title: Timesheet
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
+- category:
+  image: software-test.jpeg
+  title: Archive
+  files:
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+  - file:
+    name: This is a test doc
+    filepath: test.txt
+
