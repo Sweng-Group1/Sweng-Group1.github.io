@@ -10,7 +10,7 @@
         {% assign sorted_pages = site.pages | sort:"navbar" %}
         {% for this_page in sorted_pages %}
             {% if this_page.navbar and this_page.navbar != -1 %}
-                <a href="{{this_page.url}}" class="hidden
+                <a href=".{{this_page.url}}" class="hidden
                     rounded-lg 
                     px-8 py-3
                     {% if this_page.navbar == 9 %}bg-gray-200{% endif %}

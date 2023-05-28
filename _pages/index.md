@@ -6,6 +6,4 @@ layout: home
 title: Home
 banner: Introducing What's On
 navbar: 1
-permalink: /
-# type: page
 ---
