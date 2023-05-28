@@ -4,6 +4,10 @@ This repository houses the HTML tour, built using the Jekyll static-site generat
 ## Accessing This Website
 Simply download this repository, navigate to the `_site` directory and open the `index.html` file via your desired browser.
 
+UPDATE: This website can be auto-rebuilt and served using GitHub Pages, but for that to work this repo needs to be public. I have set this repo as private to prevent the other group further copying our work. I've found that Cloudflare works with private repos so therefore have implemented it with that.
+
+To visit this website without downloading the repo you can visit [html-tour.pages.dev](html-tour.pages.dev). Anytime a change is made in the `main` branch, Cloudflare will automatically re-build the website and the updates will be reflected in ~5 minutes at the URL.
+
 ## Modifying Website Content
 ### Setting up a Local Development Environment
 You need to have Jekyll installed on your local machine. Visit this [Jekyll Docs](https://jekyllrb.com/docs/installation/) webpage to access guides on how to install based on your OS.
