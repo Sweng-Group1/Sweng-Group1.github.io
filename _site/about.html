@@ -10,17 +10,21 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <!-- Alpine Core -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
+    <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
         <img src="./assets/img/AppBarLogoB.png" loading="lazy" alt="AppBar Ltd. Logo" width="150" class="object-cover" />
     </a>
     <!-- logo - end -->
     <!-- buttons - start -->
-    <nav class="hidden gap-5 lg:flex">
-
+    <nav class="gap-5 flex">
+        <div class="block lg:hidden rounded-lg px-4 py-2 text-center text-2xl font-semibold outline-none transition duration-100 md:text-base border border-2 border-gray-300">
+            <i class="fa-solid fa-bars" @click="navbarModalOpen = true"></i>
+        </div>
         
         
             
@@ -73,6 +77,63 @@
         
     </nav>
     <!-- buttons - end -->
+    
+    
+    <div class="fixed top-0 left-0 overflow-y-auto overflow-hidden z-[10000] w-full translate-x-0 bg-gray-800 flex flex-col p-5 transform-gpu duration-300 -translate-y-full" :class="navbarModalOpen ? 'translate-y-0' : ''">
+        
+        
+            
+                <a href="./index.html" class="
+                    rounded-lg 
+                    px-8 py-3
+                    
+                    text-center text-sm font-bold text-gray-300
+                    outline-none ring-indigo-300
+                    transition duration-100 hover:bg-gray-100 focus-visible:ring
+                    active:text-gray-700
+                    md:text-base inline-block">Home</a>
+            
+        
+            
+                <a href="./about.html" class="
+                    rounded-lg 
+                    px-8 py-3
+                    
+                    text-center text-sm font-black text-gray-300
+                    outline-none ring-indigo-300
+                    transition duration-100 hover:bg-gray-100 focus-visible:ring
+                    active:text-gray-700
+                    md:text-base inline-block">About</a>
+            
+        
+            
+                <a href="./pricing.html" class="
+                    rounded-lg 
+                    px-8 py-3
+                    
+                    text-center text-sm font-bold text-gray-300
+                    outline-none ring-indigo-300
+                    transition duration-100 hover:bg-gray-100 focus-visible:ring
+                    active:text-gray-700
+                    md:text-base inline-block">Pricing</a>
+            
+        
+            
+                <a href="./downloads.html" class="
+                    rounded-lg 
+                    px-8 py-3
+                    border border-gray-300
+                    text-center text-sm font-bold text-gray-300
+                    outline-none ring-indigo-300
+                    transition duration-100 hover:bg-gray-300 focus-visible:ring
+                    active:text-gray-700
+                    md:text-base inline-block">Downloads</a>
+            
+        
+        <div class="block px-4 pt-6 pb-2 text-center text-2xl font-semibold outline-none transition duration-100 md:text-base text-white">
+            <i class="fa-solid fa-xmark" @click="navbarModalOpen = false"></i>
+        </div>
+    </div>
 </header>
     <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
