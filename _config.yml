@@ -28,3 +28,9 @@ collections:
   pages:
     output: true
     permalink: /:name.html
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false

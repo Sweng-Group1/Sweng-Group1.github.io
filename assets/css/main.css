@@ -1,0 +1,54 @@
+---
+---
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 700;
+    font-style: normal;
+    src: url("{../assets/fonts/lemon_milk/LEMONMILK-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 700;
+    font-style: italic;
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 300;
+    font-style: italic;
+    src: url("../fonts/lemon_milk/LEMONMILK-LightItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 600;
+    font-style: italic;
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 500;
+    font-style: italic;
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "lemon_milk";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf") format("opentype");
+}

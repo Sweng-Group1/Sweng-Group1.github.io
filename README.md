@@ -12,7 +12,9 @@ To visit this website without downloading the repo you can visit [html-tour.page
 ### Setting up a Local Development Environment
 You need to have Jekyll installed on your local machine. Visit this [Jekyll Docs](https://jekyllrb.com/docs/installation/) webpage to access guides on how to install based on your OS.
 
-Now we need to install dependencies. Browse to the source-code directory in your terminal, you should be in the same level as the Gemfile. Simply run `bundle install` to install everything that's defined in the Gemfile.
+You also need NPM and Yarn installed for the CSS files to compile properly. Install NPM first following the instructions on this [this article](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac). After than, install Yarn following [this article](https://www.hostinger.co.uk/tutorials/how-to-install-yarn).
+
+Now we need to install dependencies. Browse to the source-code directory in your terminal, you should be in the same level as the Gemfile. Simply run `bundle install` to install everything that's defined in the Gemfile. Then run `yarn add postcss@latest tailwindcss@latest autoprefixer@latest cssnano@latest -D`. Finally run `npm install -D @tailwindcss/typography`.
 
 Once Jekyll and all dependencies are installed, we can run the build command so that the source-code can be compiled into a set of static HTML files. We use the build command instead of the serve command which sets up a server to make sure that we have a representation of the website closest to the version we will be submitting.
 
