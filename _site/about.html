@@ -5,15 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Unlock the power of proximity | AppBar Ltd.</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <!-- Alpine Plugins -->
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <!-- Alpine Core -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lemon Milk font -->
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Bold.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Light.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Medium.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Regular.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf" rel="stylesheet">
+    <!-- Google Fonts init and Trirong font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'lemonmilk': ['lemon_milk', 'sans-serif'],
+                    'ibm': ['IBM Plex Serif', 'serif'],
+                },
+            }
+        }
+    }
+    </script>
+    <style type="text/tailwindcss">
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 700;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Bold.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 700;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 300;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Light.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 300;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 600;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Medium.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 600;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 500;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 500;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Regular.otf");
+        }
+    </style>
 </head>
-<body>
+<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-headings:tracking-wide">
     <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
@@ -139,7 +215,7 @@
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="rounded-lg bg-gray-100 px-4 py-6 md:py-8 lg:py-12">
             <p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">Unlock the power of proximity</p>
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Our Mission</h2>
+            <h2 class="mb-4 text-center text-2xl text-gray-800 md:mb-6 lg:text-3xl">Our Mission</h2>
         </div>
     </div>
 </div>
@@ -150,7 +226,7 @@
 			Amplify your presence with What's On&#58;
 		</p>
   
-	  	<h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+	  	<h2 class="mb-4 text-2xl text-gray-800 md:mb-6 lg:text-3xl">
 			Revolutionise the way your business operates
 		</h2>
 	
@@ -174,7 +250,7 @@
 			A case study
 		</p>
   
-	  	<h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+	  	<h2 class="mb-4 text-2xl text-gray-800 md:mb-6 lg:text-3xl">
 			Empowering university students and unions
 		</h2>
 	
@@ -199,7 +275,7 @@
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <!-- text - start -->
         <div class="mb-10 md:mb-16">
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+            <h2 class="mb-4 text-center text-2xl text-gray-800 md:mb-6 lg:text-3xl">
                 Brought to you by the AppBar team
             </h2>
         </div>
@@ -437,7 +513,7 @@
             <!-- image - end -->
             <!-- content - start -->
             <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
-                <h2 class="mb-4 text-xl font-bold text-gray-800 md:text-2xl lg:text-4xl">Want to know more?</h2>
+                <h2 class="mb-4 text-xl text-gray-800 md:text-2xl lg:text-4xl">Want to know more?</h2>
                 <p class="mb-8 max-w-md text-gray-600">
                     All the hard work our dedicated teams have produced since the project's inception is conveniently grouped by category and at your full disposal on our downloads page.
 
@@ -459,7 +535,7 @@
         </div>
         <div class="container px-5 py-24 mx-auto flex">
             <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-[32rem] md:mt-0 relative z-10 shadow-md">
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Contact Us</h2>
+            <h2 class="mb-4 text-center text-2xl text-gray-800 md:mb-6 lg:text-3xl">Contact Us</h2>
             <p class="leading-relaxed font-semibold mb-1 text-gray-600">AppBar Ltd.</p>
             <p class="leading-relaxed mb-1 text-gray-600">School of Physics, Engineering and Technology</p>
             <p class="leading-relaxed mb-1 text-gray-600">University of York</p>
