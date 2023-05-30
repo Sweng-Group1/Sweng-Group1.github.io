@@ -32,14 +32,14 @@ layout: page
                 Project Planning and Management
             </h2>
         </div>
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
             {% for category in site.data.downloads.project_downloads %}
                 <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
                     <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
                         <img src="{{site.baseurl}}/assets/img/downloads/{{ category.image }}" loading="lazy" alt="{{ category.name }}" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</h6>
                         {% for file in category.files %}
                             <a href="{{site.baseurl}}/assets/internal-documents/{{ file.filepath }}" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 {{ file.name }}
@@ -68,7 +68,7 @@ layout: page
                         <img src="{{site.baseurl}}/assets/img/downloads/{{ category.image }}" loading="lazy" alt="{{ category.name }}" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</h6>
                         {% for file in category.files %}
                             <a href="{{site.baseurl}}/assets/internal-documents/{{ file.filepath }}" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 {{ file.name }}
@@ -96,7 +96,7 @@ layout: page
                         <img src="{{site.baseurl}}/assets/img/downloads/{{ category.image }}" loading="lazy" alt="{{ category.name }}" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</h6>
                         {% for file in category.files %}
                             <a href="{{site.baseurl}}/assets/internal-documents/{{ file.filepath }}" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 {{ file.name }}
@@ -123,7 +123,7 @@ layout: page
                         <img src="{{site.baseurl}}/assets/img/downloads/{{ category.image }}" loading="lazy" alt="{{ category.name }}" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</h6>
                         {% for file in category.files %}
                             <a href="{{site.baseurl}}/assets/internal-documents/{{ file.filepath }}" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 {{ file.name }}
@@ -150,7 +150,7 @@ layout: page
                         <img src="{{site.baseurl}}/assets/img/downloads/{{ category.image }}" loading="lazy" alt="{{ category.name }}" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</h6>
                         {% for file in category.files %}
                             <a href="{{site.baseurl}}/assets/internal-documents/{{ file.filepath }}" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 {{ file.name }}
@@ -177,7 +177,7 @@ layout: page
                         <img src="{{site.baseurl}}/assets/img/downloads/{{ category.image }}" loading="lazy" alt="{{ category.name }}" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">{{ category.title }}</h6>
                         {% for file in category.files %}
                             <a href="{{site.baseurl}}/assets/internal-documents/{{ file.filepath }}" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 {{ file.name }}

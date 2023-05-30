@@ -89,7 +89,7 @@
         }
     </style>
 </head>
-<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-headings:tracking-wide">
+<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-a:font-ibm prose-headings:tracking-wide">
     <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
@@ -214,19 +214,19 @@
     <!-- hero - start -->
 <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
 	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-		<section class="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
+		<section class="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black shadow-lg md:py-20 xl:py-48">
 			<!-- image - start -->
-			<img src="./assets/img/home/nasa-Q1p7bh3SHj8-unsplash.jpg" loading="lazy" alt="Photo by Nasa from Unsplash" class="absolute inset-0 h-full w-full object-cover object-center" />
+			<img src="./assets/img/home/nasa-Q1p7bh3SHj8-unsplash.jpg" loading="lazy" alt="Photo by Nasa from Unsplash" class="absolute inset-0 h-full w-full object-cover object-center sm:top-40" />
 			<!-- image - end -->
 			<!-- overlay - start -->
-			<div class="absolute inset-0 bg-neutral-400 mix-blend-multiply"></div>
+			<div class="absolute inset-0 bg-neutral-400 md:bg-neutral-100 mix-blend-multiply"></div>
 			<!-- overlay - end -->
 			<!-- text start -->
-			<div class="relative flex flex-col items-center p-4 sm:max-w-xl">
+			<div class="relative flex flex-col items-center p-12 sm:p-4 sm:max-w-xl">
 				<!-- <p class="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8">Very proud to introduce</p> -->
 				<img src="./assets/img/home/WhatsOnLogo.png" loading="lazy" alt="What's On Logo" class="object-cover mb-8 w-64" />
 				<!-- <h1 class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">Revolutionary way to build the web</h1> -->
-				<h1 class="mb-4 text-center text-lg font-light text-orange-200 sm:text-3xl md:mb-8 font-empasis">Unlock the power of proximity with an exclusive social platform</h1>
+				<h1 class="mb-4 text-center text-lg !font-medium text-orange-200 sm:text-3xl md:mb-8 font-empasis">Unlock the power of proximity with an exclusive social platform</h1>
 				<div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
 					<a href="#features" class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Take a tour</a>
 				</div>
@@ -262,16 +262,16 @@
             <a href="#" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
 				<img src="./assets/img/home/testimonials/ury.png" loading="lazy" alt="Harvey Mellor Logo" class="object-cover w-40" />
             </a>
-            <div class="max-w-md text-center text-gray-600 lg:text-base font-empasis font-black italic">
+            <p class="max-w-md text-center text-gray-600 lg:text-base font-empasis font-black italic">
 				This concept would revolutionise the way we do our socials and big events. The ability to advertise our events would fundementally change how we do our recruitment and marketing.
 
-			</div>
+			</p>
             <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
                     <img src="./assets/img/home/testimonials/harvey.png" loading="lazy" alt="Photo of Harvey Mellor" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <div class="text-center text-xs font-bold text-indigo-500 sm:text-left md:text-sm">Harvey Mellor</div>
+                    <h6 class="text-center text-xs font-bold text-indigo-500 sm:text-left md:text-sm">Harvey Mellor</h6>
                     <p class="text-center text-xs text-gray-500 sm:text-left md:text-xs">URY Station Manager</p>
                 </div>
             </div>
@@ -283,16 +283,16 @@
             <a href="#" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
 				<img src="./assets/img/home/testimonials/YUSU.png" loading="lazy" alt="Pierrick Roger Logo" class="object-cover w-40" />
             </a>
-            <div class="max-w-md text-center text-gray-600 lg:text-base font-empasis font-black italic">
+            <p class="max-w-md text-center text-gray-600 lg:text-base font-empasis font-black italic">
 				We are very interested in this product and think it would bring a lot of value to the student body and their interest groups. Very exciting!
 
-			</div>
+			</p>
             <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
                     <img src="./assets/img/home/testimonials/Pierrick.webp" loading="lazy" alt="Photo of Pierrick Roger" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <div class="text-center text-xs font-bold text-indigo-500 sm:text-left md:text-sm">Pierrick Roger</div>
+                    <h6 class="text-center text-xs font-bold text-indigo-500 sm:text-left md:text-sm">Pierrick Roger</h6>
                     <p class="text-center text-xs text-gray-500 sm:text-left md:text-xs">YUSU President</p>
                 </div>
             </div>
@@ -304,16 +304,16 @@
             <a href="#" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
 				<img src="./assets/img/home/testimonials/BandSoc.jpg" loading="lazy" alt="Mia Duncan Logo" class="object-cover w-40" />
             </a>
-            <div class="max-w-md text-center text-gray-600 lg:text-base font-empasis font-black italic">
+            <p class="max-w-md text-center text-gray-600 lg:text-base font-empasis font-black italic">
 				Having the option to market our various on-campus events directly to the student body, specifying particular locations, would completely shift student engagement within our society.
 
-			</div>
+			</p>
             <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
                     <img src="./assets/img/home/testimonials/Mia.jpg" loading="lazy" alt="Photo of Mia Duncan" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <div class="text-center text-xs font-bold text-indigo-500 sm:text-left md:text-sm">Mia Duncan</div>
+                    <h6 class="text-center text-xs font-bold text-indigo-500 sm:text-left md:text-sm">Mia Duncan</h6>
                     <p class="text-center text-xs text-gray-500 sm:text-left md:text-xs">BandSoc President</p>
                 </div>
             </div>
