@@ -5,15 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Introducing What's On&#58; | AppBar Ltd.</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <!-- Alpine Plugins -->
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <!-- Alpine Core -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lemon Milk font -->
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Bold.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Light.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Medium.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-Regular.otf" rel="stylesheet">
+    <link href="./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf" rel="stylesheet">
+    <!-- Google Fonts init and Trirong font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'lemonmilk': ['lemon_milk', 'sans-serif'],
+                    'ibm': ['IBM Plex Serif', 'serif'],
+                },
+            }
+        }
+    }
+    </script>
+    <style type="text/tailwindcss">
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 700;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Bold.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 700;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 300;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Light.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 300;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 600;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Medium.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 600;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 500;
+            font-style: italic;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf");
+        }
+        @font-face {
+            font-family: "lemon_milk";
+            font-weight: 500;
+            font-style: normal;
+            src: url("./assets/fonts/lemon_milk/LEMONMILK-Regular.otf");
+        }
+    </style>
 </head>
-<body>
+<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-headings:tracking-wide">
     <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
@@ -148,9 +224,9 @@
 			<!-- text start -->
 			<div class="relative flex flex-col items-center p-4 sm:max-w-xl">
 				<!-- <p class="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8">Very proud to introduce</p> -->
-				<img src="./assets/img/home/WhatsOnLogo.png" loading="lazy" alt="What's On Logo" class="object-cover md:mb-8 w-64" />
+				<img src="./assets/img/home/WhatsOnLogo.png" loading="lazy" alt="What's On Logo" class="object-cover mb-8 w-64" />
 				<!-- <h1 class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">Revolutionary way to build the web</h1> -->
-				<h1 class="mb-4 text-center text-lg font-black text-orange-200 sm:text-3xl md:mb-8 font-empasis">Unlock the power of proximity with an exclusive social platform</h1>
+				<h1 class="mb-4 text-center text-lg font-light text-orange-200 sm:text-3xl md:mb-8 font-empasis">Unlock the power of proximity with an exclusive social platform</h1>
 				<div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
 					<a href="#features" class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Take a tour</a>
 				</div>
@@ -167,7 +243,7 @@
 			Introducing What's On&#58;
 		</p>
   
-	  	<h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+	  	<h2 class="mb-4 text-center text-2xl text-gray-800 md:mb-6 lg:text-3xl">
 			A social media companion for events
 		</h2>
 	
