@@ -13,15 +13,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Lemon Milk font -->
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Bold.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Light.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Medium.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Regular.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf" rel="stylesheet">
     <!-- Google Fonts init and Trirong font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +80,7 @@
         }
     </style>
 </head>
-<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-headings:tracking-wide">
+<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-a:font-ibm prose-headings:tracking-wide">
     <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
@@ -253,7 +244,7 @@
                 <div class="h-2 bg-black"></div>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 1</div>
+                        <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 1</h3>
                         <p class="mb-8 px-8 text-center text-gray-500">Great for budding organisations
 </p>
                         <div class="space-y-4">
@@ -263,7 +254,7 @@
                                     <circle cx="8" cy="8" r="8" fill="currentColor" class="text-gray-300" />
                                     <circle cx="8" cy="8" r="3" fill="currentColor" class="text-gray-500" />
                                 </svg>
-                                <span class="text-gray-600">500 maximum users</span>
+                                <p class="text-gray-600">500 maximum users</p>
                             </div>
                             <!-- check - end -->
                         </div>
@@ -276,10 +267,10 @@
             <!-- plan - end -->
             <!-- plan - start -->
             <div class="flex flex-col overflow-hidden rounded-lg border-2 g-gradient-to-r from-gray-50 to-gray-300">
-                <div class="bg-gradient-to-r from-gray-50 to-gray-300 py-2 text-center text-sm font-semibold uppercase tracking-widest text-black">Popular choice</div>
+                <h4 class="bg-gradient-to-r from-gray-50 to-gray-300 py-2 text-center text-sm font-semibold uppercase tracking-widest text-black">Popular choice</h4>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 2</div>
+                        <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 2</h3>
                         <p class="mx-auto mb-8 px-8 text-center text-gray-500">Perfect for a medium-sized organisation with potential to grow
 </p>
                         <div class="space-y-4">
@@ -289,7 +280,7 @@
                                     <circle cx="8" cy="8" r="8" fill="currentColor" class="text-gray-300" />
                                     <circle cx="8" cy="8" r="3" fill="currentColor" class="text-gray-500" />
                                 </svg>
-                                <span class="text-gray-600">2000 maximum users</span>
+                                <p class="text-gray-600">2000 maximum users</p>
                             </div>
                             <!-- check - end -->
                         </div>
@@ -305,7 +296,7 @@
                 <div class="h-2 bg-gradient-to-r from-amber-300 to-amber-500"></div>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 3</div>
+                        <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 3</h3>
                         <p class="mx-auto mb-8 px-8 text-center text-gray-500">Great for mature businesses with large campuses
 </p>
                         <div class="space-y-4">
@@ -315,7 +306,7 @@
                                     <circle cx="8" cy="8" r="8" fill="currentColor" class="text-gray-300" />
                                     <circle cx="8" cy="8" r="3" fill="currentColor" class="text-gray-500" />
                                 </svg>
-                                <span class="text-gray-600">5000 maximum users</span>
+                                <p class="text-gray-600">5000 maximum users</p>
                             </div>
                             <!-- check - end -->
                         </div>
@@ -330,7 +321,7 @@
                 <div class="h-2 bg-gradient-to-r to-cyan-300 from-cyan-100"></div>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-0">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 3+</div>
+                        <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">Tier 3+</h3>
                         <p class="mx-auto mb-8 px-8 text-center text-gray-500">Reached Tier 3 but need to accomodate users? You can increase your user limit with ease.
 </p>
                     </div>
@@ -353,7 +344,7 @@
                 <div class="h-2 bg-gradient-to-r from-gray-50 to-gray-300"></div>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Basic Reskin</div>
+                        <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">Basic Reskin</h3>
                         <p class="mb-8 px-8 text-center text-gray-500">Your business logos and colour schemes can be implemented into the client UI
 </p>
                     </div>
@@ -368,7 +359,7 @@
                 <div class="bg-gradient-to-r from-amber-300 to-amber-500 py-2 text-center text-sm font-semibold uppercase tracking-widest text-white">Popular choice</div>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Tailored Reskin</div>
+                        <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">Tailored Reskin</h3>
                         <p class="mx-auto mb-8 px-8 text-center text-gray-500">In-app designers will design logos and colour schemes for the client app UI as per your business requests
 </p>
                     </div>
@@ -383,7 +374,7 @@
                 <div class="h-2 bg-gray-500"></div>
                 <div class="flex flex-1 flex-col p-6 pt-8">
                     <div class="mb-12">
-                        <div class="mb-2 text-center text-2xl font-bold text-gray-800">Advertisement Support</div>
+                        <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">Advertisement Support</h3>
                         <p class="mx-auto mb-8 px-8 text-center text-gray-500">We can implement functionality for your business to monetise your What's On: platform by running ads from trusted providers such as Google Adsense.</p>
                     </div>
                     <div class="mt-auto">

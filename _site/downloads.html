@@ -13,15 +13,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Lemon Milk font -->
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Bold.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Light.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Medium.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-Regular.otf" rel="stylesheet">
-    <link href="./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf" rel="stylesheet">
     <!-- Google Fonts init and Trirong font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +80,7 @@
         }
     </style>
 </head>
-<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-headings:tracking-wide">
+<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-a:font-ibm prose-headings:tracking-wide">
     <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
@@ -251,14 +242,14 @@
                 Project Planning and Management
             </h2>
         </div>
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
             
                 <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
                     <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Functional Specification</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Functional Specification</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -276,7 +267,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Ideation</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Ideation</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -294,7 +285,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Planning</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Planning</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -327,7 +318,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Client App</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Client App</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -345,7 +336,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Server Software</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Server Software</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -363,7 +354,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Example Multimedia Presentations</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Example Multimedia Presentations</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -381,7 +372,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Intergroup Contracts</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Intergroup Contracts</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -399,7 +390,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Project Wide Specification (PWS)</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Project Wide Specification (PWS)</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -417,7 +408,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Version Control</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Version Control</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -449,7 +440,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Commenting Exemplar</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Commenting Exemplar</h6>
                         
                             <a href="./assets/internal-documents/Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -467,7 +458,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Documentation Admin</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Documentation Admin</h6>
                         
                             <a href="./assets/internal-documents/Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -485,7 +476,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">First Iteration</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">First Iteration</h6>
                         
                             <a href="./assets/internal-documents/Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -503,7 +494,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">QA Manual</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">QA Manual</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -521,7 +512,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">User Manual</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">User Manual</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -539,7 +530,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Archive</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Archive</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -570,7 +561,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Financial Business Plan</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Financial Business Plan</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -588,7 +579,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Financial Reports</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Financial Reports</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -606,7 +597,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Timesheet</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Timesheet</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -624,7 +615,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Archive</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Archive</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -655,7 +646,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Presentations</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Presentations</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -673,7 +664,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Design Documentation</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Design Documentation</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -691,7 +682,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Branding</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Branding</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -709,7 +700,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">YUSU Declaration of Interest</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">YUSU Declaration of Interest</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -727,7 +718,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Surveys</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Surveys</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -745,7 +736,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Development Assets</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Development Assets</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -763,7 +754,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">HTML Tour Planning</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">HTML Tour Planning</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -794,7 +785,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Testing & Integration Plans</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Testing & Integration Plans</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
@@ -812,7 +803,7 @@
                         <img src="./assets/img/downloads/software-test.jpeg" loading="lazy" alt="" class="h-full w-full object-cover object-center" />
                     </div>
                     <div class="flex flex-col col-1">
-                        <div class="text-center font-bold text-indigo-500 md:text-lg mb-3">Testing & Integration Reports</div>
+                        <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Testing & Integration Reports</h6>
                         
                             <a href="./assets/internal-documents/test.txt" class="mb-0 text-center text-sm text-gray-500 md:mb-1 md:text-base">
                                 This is a test doc
