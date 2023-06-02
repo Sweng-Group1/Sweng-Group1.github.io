@@ -5,7 +5,7 @@
             <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
                 {% for this_page in sorted_pages %}
                     {% if this_page.navbar and this_page.navbar != -1 %}
-                        <a href=".{{this_page.url}}" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 {% if this_page.url == page.url %}font-bold{% endif %}">{{this_page.title}}</a>
+                        <a href=".{{this_page.url}}" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 {% if this_page.url == page.url %}font-bold{% endif %}">{{this_page.title}}</a>
                     {% endif %}
                 {% endfor %}
             </nav>
@@ -35,6 +35,6 @@
             </div> -->
             <!-- social - end -->
         </div>
-        <div class="py-8 text-center text-sm text-gray-400">© 2023 - AppBar Ltd. All rights reserved.</div>
+        <div class="lead py-8 text-center text-sm text-gray-400">© 2023 - AppBar Ltd. All rights reserved.</div>
     </footer>
 </div>

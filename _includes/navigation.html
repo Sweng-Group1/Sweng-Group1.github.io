@@ -13,10 +13,11 @@
         {% for this_page in sorted_pages %}
             {% if this_page.navbar and this_page.navbar != -1 %}
                 <a href=".{{this_page.url}}" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     {% if this_page.navbar == 9 %}bg-gray-200{% endif %}
-                    text-center text-sm {% if this_page.url == page.url %}font-black{% else %}font-semibold{% endif %} text-gray-500
+                    text-center text-sm {% if this_page.url == page.url %}font-black{% else %}font-normal{% endif %} text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 {% if this_page.navbar == 9 %}hover:bg-gray-300{% else %}hover:bg-gray-100{% endif %} focus-visible:ring
                     active:text-gray-700
@@ -32,10 +33,11 @@
         {% for this_page in sorted_pages %}
             {% if this_page.navbar and this_page.navbar != -1 %}
                 <a href=".{{this_page.url}}" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     {% if this_page.navbar == 9 %}border border-gray-300{% endif %}
-                    text-center text-sm {% if this_page.url == page.url %}font-black{% else %}font-bold{% endif %} text-gray-300
+                    text-center text-sm {% if this_page.url == page.url %}font-black{% else %}font-light{% endif %} text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 {% if this_page.navbar == 9 %}hover:bg-gray-300{% else %}hover:bg-gray-100{% endif %} focus-visible:ring
                     active:text-gray-700

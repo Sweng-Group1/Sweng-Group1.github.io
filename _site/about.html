@@ -22,8 +22,9 @@
         theme: {
             extend: {
                 fontFamily: {
-                    'lemonmilk': ['lemon_milk', 'sans-serif'],
+                    'lemonmilk': ['Lemon Milk', 'sans-serif'],
                     'ibm': ['IBM Plex Serif', 'serif'],
+                    'general': ['General Sans', 'sans-serif'],
                 },
             }
         }
@@ -31,56 +32,74 @@
     </script>
     <style type="text/tailwindcss">
         @font-face {
-            font-family: "lemon_milk";
+            font-family: 'General Sans';
+            src: url('./assets/fonts/general-sans/fonts/GeneralSans-Variable.woff2') format('woff2'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-Variable.woff') format('woff'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-Variable.ttf') format('truetype');
+                font-weight: 200 700;
+                font-display: swap;
+                font-style: normal;
+        }
+        @font-face {
+            font-family: 'General Sans';
+            src: url('./assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.woff') format('woff'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+                font-weight: 200 700;
+                font-display: swap;
+                font-style: italic;
+        }
+        @font-face {
+            font-family: "Lemon Milk";
             font-weight: 700;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Bold.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 700;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 300;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Light.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 300;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 600;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Medium.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 600;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 500;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 500;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Regular.otf");
         }
     </style>
 </head>
-<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-a:font-ibm prose-headings:tracking-wide">
+<body class="prose-headings:font-general prose-lead:font-lemonmilk prose-lead:font-light prose-lead:tracking-wide prose-p:font-ibm prose-a:font-ibm"></body>
     <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
@@ -96,10 +115,11 @@
         
             
                 <a href="./index.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-semibold text-gray-500
+                    text-center text-sm font-normal text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -108,6 +128,7 @@
         
             
                 <a href="./about.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
@@ -120,10 +141,11 @@
         
             
                 <a href="./pricing.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-semibold text-gray-500
+                    text-center text-sm font-normal text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -132,10 +154,11 @@
         
             
                 <a href="./downloads.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     bg-gray-200
-                    text-center text-sm font-semibold text-gray-500
+                    text-center text-sm font-normal text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-300 focus-visible:ring
                     active:text-gray-700
@@ -151,10 +174,11 @@
         
             
                 <a href="./index.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-bold text-gray-300
+                    text-center text-sm font-light text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -163,6 +187,7 @@
         
             
                 <a href="./about.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
@@ -175,10 +200,11 @@
         
             
                 <a href="./pricing.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-bold text-gray-300
+                    text-center text-sm font-light text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -187,10 +213,11 @@
         
             
                 <a href="./downloads.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     border border-gray-300
-                    text-center text-sm font-bold text-gray-300
+                    text-center text-sm font-light text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-300 focus-visible:ring
                     active:text-gray-700
@@ -205,7 +232,7 @@
     <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="rounded-lg bg-gray-100 px-4 py-6 md:py-8 lg:py-12">
-            <p class="mb-2 text-center font-semibold text-indigo-500 md:mb-3 lg:text-lg">Unlock the power of proximity</p>
+            <p class="lead mb-2 text-center text-indigo-500 md:mb-3 lg:text-lg">Unlock the power of proximity</p>
             <h2 class="mb-4 text-center text-2xl text-gray-800 md:mb-6 lg:text-3xl">Our Mission</h2>
         </div>
     </div>
@@ -213,7 +240,7 @@
 
 <div class="bg-white pb-6 sm:pb-8 lg:py-12">
 	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-		<p class="mb-2 font-semibold text-indigo-500 md:mb-3 lg:text-lg">
+		<p class="lead mb-2 text-indigo-500 md:mb-3 lg:text-lg">
 			Amplify your presence with What's On&#58;
 		</p>
   
@@ -237,7 +264,7 @@
 
 <div class="bg-gray-100 pb-6 sm:pb-8 lg:py-12">
 	<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-		<p class="mb-2 pt-4 font-semibold text-indigo-500 md:mb-3 lg:text-lg">
+		<p class="lead mb-2 pt-4 text-indigo-500 md:mb-3 lg:text-lg">
 			A case study
 		</p>
   
@@ -279,7 +306,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Sidharth Shanmugam</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Sidharth Shanmugam</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Project Manager</p>
                 </div>
             </div>
@@ -290,7 +317,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Fraser Todd</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Fraser Todd</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Software Manager</p>
                 </div>
             </div>
@@ -301,7 +328,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Paul Pickering</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Paul Pickering</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">QC Manager</p>
                 </div>
             </div>
@@ -312,7 +339,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Jonathan Cooke</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Jonathan Cooke</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Documentation Manager / QA Tester</p>
                 </div>
             </div>
@@ -323,7 +350,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Matteo Pearce</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Matteo Pearce</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Finance Manager / Brand Champion</p>
                 </div>
             </div>
@@ -334,7 +361,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Oliver Partridge</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Oliver Partridge</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Comms Manager / UI Designer / Brand Champion</p>
                 </div>
             </div>
@@ -345,7 +372,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Sophie Maw</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Sophie Maw</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Marketing and Design Manager</p>
                 </div>
             </div>
@@ -356,7 +383,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Srikanth Jakka</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Srikanth Jakka</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">VC Manager</p>
                 </div>
             </div>
@@ -367,7 +394,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Sarujan Thevathasan</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Sarujan Thevathasan</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">UI Designer / Brand Champion</p>
                 </div>
             </div>
@@ -378,7 +405,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Will Hinton</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Will Hinton</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">QA Tester</p>
                 </div>
             </div>
@@ -389,7 +416,7 @@
                     <img src="./assets/img/about/team/custom_maps.svg" loading="lazy" alt="Portrait of " class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg">Luke George</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg lead">Luke George</h6>
                     <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Accountant</p>
                 </div>
             </div>
@@ -416,7 +443,7 @@
                     <img src="./assets/img/about/team/software-dev.jpeg" loading="lazy" alt="Software Development Team Portrait" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Software Development Team</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3 lead">Software Development Team</h6>
                     
                     <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
                         <b>Client-Side&#58;</b> our team of intrepid developers has brought our vision to life, implementing the main app and all its interactive features.
@@ -434,7 +461,7 @@
                     <img src="./assets/img/about/team/software-test.jpeg" loading="lazy" alt="Software Testing Team Portrait" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Software Testing Team</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3 lead">Software Testing Team</h6>
                     
                     <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
                         Remember when that project worked perfectly the first time? Neither do we, that's why we have a team of dedicated testers who ensure that every snippet of code works as intended.
@@ -452,7 +479,7 @@
                     <img src="./assets/img/about/team/documentation.jpeg" loading="lazy" alt="Documentation Team Portrait" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Documentation Team</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3 lead">Documentation Team</h6>
                     
                     <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
                         Just like visiting your nan, boring things in life are a necessary evil. Luckily for us, we have a team dedicated to making sure our paperwork is in order, and that the t's are crossed, and the i's dotted.
@@ -466,7 +493,7 @@
                     <img src="./assets/img/about/team/marketing.jpeg" loading="lazy" alt="Marketing Team Portrait" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Marketing Team</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3 lead">Marketing Team</h6>
                     
                     <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
                         Whilst the rest of us sit in our dungeon crunching code, the marketing team ensures that the face of our operation is clean-shaven and ready to impress, devising strategies to enter into new markets and appeal to all walks of life.
@@ -480,7 +507,7 @@
                     <img src="./assets/img/about/team/finance.jpeg" loading="lazy" alt="Finance Team Portrait" class="h-full w-full object-cover object-center" />
                 </div>
                 <div>
-                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3">Finance Team</h6>
+                    <h6 class="text-center font-bold text-indigo-500 md:text-lg mb-3 lead">Finance Team</h6>
                     
                     <p class="mb-3 text-justify text-sm text-gray-500 md:mb-4 md:text-base">
                         Whilst competing with the Documentation team for the crown of “Most Boring”, the Finance department brings a dose of common sense to the team, continuously assessing our financial progress and computing the feasibility of future projects.
@@ -510,7 +537,7 @@
 
                 </p>
                 <div class="mt-auto">
-                    <a href="./downloads.html" class="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">Downloads</a>
+                    <a href="./downloads.html" class="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base lead">Downloads</a>
                 </div>
             </div>
             <!-- content - end -->
@@ -527,7 +554,7 @@
         <div class="container px-5 py-24 mx-auto flex">
             <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-[32rem] md:mt-0 relative z-10 shadow-md">
             <h2 class="mb-4 text-center text-2xl text-gray-800 md:mb-6 lg:text-3xl">Contact Us</h2>
-            <p class="leading-relaxed font-semibold mb-1 text-gray-600">AppBar Ltd.</p>
+            <p class="leading-relaxed font-semibold mb-1 text-gray-600"><span class="lead !font-semibold text-gray-600">What's On</span> - AppBar Ltd.</p>
             <p class="leading-relaxed mb-1 text-gray-600">School of Physics, Engineering and Technology</p>
             <p class="leading-relaxed mb-1 text-gray-600">University of York</p>
             <p class="leading-relaxed mb-1 text-gray-600">Heslington</p>
@@ -547,19 +574,19 @@
             <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
                 
                     
-                        <a href="./index.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Home</a>
+                        <a href="./index.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Home</a>
                     
                 
                     
-                        <a href="./about.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 font-bold">About</a>
+                        <a href="./about.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 font-bold">About</a>
                     
                 
                     
-                        <a href="./pricing.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Pricing</a>
+                        <a href="./pricing.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Pricing</a>
                     
                 
                     
-                        <a href="./downloads.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Downloads</a>
+                        <a href="./downloads.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Downloads</a>
                     
                 
             </nav>
@@ -589,7 +616,7 @@
             </div> -->
             <!-- social - end -->
         </div>
-        <div class="py-8 text-center text-sm text-gray-400">© 2023 - AppBar Ltd. All rights reserved.</div>
+        <div class="lead py-8 text-center text-sm text-gray-400">© 2023 - AppBar Ltd. All rights reserved.</div>
     </footer>
 </div>
 </body>

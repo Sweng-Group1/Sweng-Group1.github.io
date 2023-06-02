@@ -22,8 +22,9 @@
         theme: {
             extend: {
                 fontFamily: {
-                    'lemonmilk': ['lemon_milk', 'sans-serif'],
+                    'lemonmilk': ['Lemon Milk', 'sans-serif'],
                     'ibm': ['IBM Plex Serif', 'serif'],
+                    'general': ['General Sans', 'sans-serif'],
                 },
             }
         }
@@ -31,56 +32,74 @@
     </script>
     <style type="text/tailwindcss">
         @font-face {
-            font-family: "lemon_milk";
+            font-family: 'General Sans';
+            src: url('./assets/fonts/general-sans/fonts/GeneralSans-Variable.woff2') format('woff2'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-Variable.woff') format('woff'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-Variable.ttf') format('truetype');
+                font-weight: 200 700;
+                font-display: swap;
+                font-style: normal;
+        }
+        @font-face {
+            font-family: 'General Sans';
+            src: url('./assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.woff') format('woff'),
+                url('./assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+                font-weight: 200 700;
+                font-display: swap;
+                font-style: italic;
+        }
+        @font-face {
+            font-family: "Lemon Milk";
             font-weight: 700;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Bold.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 700;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 300;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Light.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 300;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 600;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Medium.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 600;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 500;
             font-style: italic;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 500;
             font-style: normal;
             src: url("./assets/fonts/lemon_milk/LEMONMILK-Regular.otf");
         }
     </style>
 </head>
-<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-a:font-ibm prose-headings:tracking-wide">
+<body class="prose-headings:font-general prose-lead:font-lemonmilk prose-lead:font-light prose-lead:tracking-wide prose-p:font-ibm prose-a:font-ibm"></body>
     <header x-data="{navbarModalOpen: false}" class="mb-4 flex items-center justify-between py-4 md:py-8 mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- logo - start -->
     <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
@@ -96,10 +115,11 @@
         
             
                 <a href="./index.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-semibold text-gray-500
+                    text-center text-sm font-normal text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -108,10 +128,11 @@
         
             
                 <a href="./about.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-semibold text-gray-500
+                    text-center text-sm font-normal text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -120,10 +141,11 @@
         
             
                 <a href="./pricing.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-semibold text-gray-500
+                    text-center text-sm font-normal text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -132,10 +154,11 @@
         
             
                 <a href="./downloads.html" class="hidden
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     bg-gray-200
-                    text-center text-sm font-semibold text-gray-500
+                    text-center text-sm font-normal text-gray-500
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-300 focus-visible:ring
                     active:text-gray-700
@@ -151,10 +174,11 @@
         
             
                 <a href="./index.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-bold text-gray-300
+                    text-center text-sm font-light text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -163,10 +187,11 @@
         
             
                 <a href="./about.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-bold text-gray-300
+                    text-center text-sm font-light text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -175,10 +200,11 @@
         
             
                 <a href="./pricing.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     
-                    text-center text-sm font-bold text-gray-300
+                    text-center text-sm font-light text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-100 focus-visible:ring
                     active:text-gray-700
@@ -187,10 +213,11 @@
         
             
                 <a href="./downloads.html" class="
+                    !font-general
                     rounded-lg 
                     px-8 py-3
                     border border-gray-300
-                    text-center text-sm font-bold text-gray-300
+                    text-center text-sm font-light text-gray-300
                     outline-none ring-indigo-300
                     transition duration-100 hover:bg-gray-300 focus-visible:ring
                     active:text-gray-700
@@ -230,19 +257,19 @@
             <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
                 
                     
-                        <a href="./index.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Home</a>
+                        <a href="./index.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Home</a>
                     
                 
                     
-                        <a href="./about.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">About</a>
+                        <a href="./about.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">About</a>
                     
                 
                     
-                        <a href="./pricing.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Pricing</a>
+                        <a href="./pricing.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Pricing</a>
                     
                 
                     
-                        <a href="./downloads.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Downloads</a>
+                        <a href="./downloads.html" class="!font-general text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600 ">Downloads</a>
                     
                 
             </nav>
@@ -272,7 +299,7 @@
             </div> -->
             <!-- social - end -->
         </div>
-        <div class="py-8 text-center text-sm text-gray-400">© 2023 - AppBar Ltd. All rights reserved.</div>
+        <div class="lead py-8 text-center text-sm text-gray-400">© 2023 - AppBar Ltd. All rights reserved.</div>
     </footer>
 </div>
 </body>

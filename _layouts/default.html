@@ -22,8 +22,9 @@
         theme: {
             extend: {
                 fontFamily: {
-                    'lemonmilk': ['lemon_milk', 'sans-serif'],
+                    'lemonmilk': ['Lemon Milk', 'sans-serif'],
                     'ibm': ['IBM Plex Serif', 'serif'],
+                    'general': ['General Sans', 'sans-serif'],
                 },
             }
         }
@@ -31,56 +32,74 @@
     </script>
     <style type="text/tailwindcss">
         @font-face {
-            font-family: "lemon_milk";
+            font-family: 'General Sans';
+            src: url('{{site.baseurl}}/assets/fonts/general-sans/fonts/GeneralSans-Variable.woff2') format('woff2'),
+                url('{{site.baseurl}}/assets/fonts/general-sans/fonts/GeneralSans-Variable.woff') format('woff'),
+                url('{{site.baseurl}}/assets/fonts/general-sans/fonts/GeneralSans-Variable.ttf') format('truetype');
+                font-weight: 200 700;
+                font-display: swap;
+                font-style: normal;
+        }
+        @font-face {
+            font-family: 'General Sans';
+            src: url('{{site.baseurl}}/assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+                url('{{site.baseurl}}/assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.woff') format('woff'),
+                url('{{site.baseurl}}/assets/fonts/general-sans/fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+                font-weight: 200 700;
+                font-display: swap;
+                font-style: italic;
+        }
+        @font-face {
+            font-family: "Lemon Milk";
             font-weight: 700;
             font-style: normal;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-Bold.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 700;
             font-style: italic;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-BoldItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 300;
             font-style: normal;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-Light.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 300;
             font-style: italic;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-LightItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 600;
             font-style: normal;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-Medium.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 600;
             font-style: italic;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-MediumItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 500;
             font-style: italic;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf");
         }
         @font-face {
-            font-family: "lemon_milk";
+            font-family: "Lemon Milk";
             font-weight: 500;
             font-style: normal;
             src: url("{{site.baseurl}}/assets/fonts/lemon_milk/LEMONMILK-Regular.otf");
         }
     </style>
 </head>
-<body class="prose-headings:font-lemonmilk prose-headings:font-light prose-headings:italic prose-p:font-ibm prose-a:font-ibm prose-headings:tracking-wide">
+<body class="prose-headings:font-general prose-lead:font-lemonmilk prose-lead:font-light prose-lead:tracking-wide prose-p:font-ibm prose-a:font-ibm"></body>
     {% include navigation.html %}
     {{ content }}
     {% include footer.html %}
