@@ -3,28 +3,100 @@
   title: Functional Specification
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Functional Specification 1.2.1
+    filepath: AppBar - What's On Project Plan/Functional Specification/Group 1 - AppBar - Functional Specification - 1.2.1.pdf
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Functional Specification 1.1.0
+    filepath: AppBar - What's On Project Plan/Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+  - file:
+    name: Functional Specification 1.0.2
+    filepath: AppBar - What's On Project Plan/Functional Specification/Group 1 - AppBar - Functional Specification - 1_0_2.pdf
+  - file:
+    name: Functional Specification 1.0.1
+    filepath: AppBar - What's On Project Plan/Functional Specification/Group 1 - Functional Specification - 1.0.1.pdf
+  - file:
+    name: Functional Specification 0.2.2
+    filepath: AppBar - What's On Project Plan/Functional Specification/Group 1 - Functional Specification Draft 2 - 0.2.2.pdf
+  - file:
+    name: Functional Specification Draft 1
+    filepath: AppBar - What's On Project Plan/Functional Specification/Group 1 - Functional Specification Draft - 1.pdf
+  - file:
+    name: Functional Specification Draft 0
+    filepath: AppBar - What's On Project Plan/Functional Specification/Functional Specification First Draft.pdf
+  - file:
+    name: Research Notes
+    filepath: AppBar - What's On Project Plan/Functional Specification/Functional Specification Research Notes - 08_11_2022.pdf
+
+
+
+
 - category:
   image: software-test.jpeg
   title: Ideation
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Mission Statement
+    filepath: AppBar - What's On Project Plan/Ideation/Mission Statement 01_02_2023.pdf
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Customer and User Ideas
+    filepath: AppBar - What's On Project Plan/Ideation/Customer and User Ideas - 09_11_2022.pdf
+  - file:
+    name: Preliminary Desktop App Mock-ups
+    filepath: AppBar - What's On Project Plan/Ideation/Preliminary Desktop App Mock-ups - Sidharth Shanmugam - 05_11_2022.pdf
+  - file:
+    name: Project Idea Proposals
+    filepath: AppBar - What's On Project Plan/Ideation/Group 1 - Project Idea Proposals - 01_11_2022.pdf
+  - file:
+    name: Project Ideas
+    filepath: AppBar - What's On Project Plan/Ideation/Project Ideas - 24_10_2022.pdf
+
+
+
+
 - category:
   image: software-test.jpeg
   title: Planning
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Weekly Sprints
+    filepath: AppBar - What's On Project Plan/Project Planning/Weekly_Sprint - Fraser Todd, Sidharth Shanmugam.xlsx
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Second Iteration
+    filepath: AppBar - What's On Project Plan/Project Planning/Project_Roadmap_Second_Iteration_Delivery - Sidharth Shanmugam.xlsx
+  - file:
+    name: First Iteration
+    filepath: AppBar - What's On Project Plan/Project Planning/Project_Roadmap_Project_Specification_First_Iteration - Sidharth Shanmugam.xlsx
+  - file:
+    name: Company Set Up
+    filepath: AppBar - What's On Project Plan/Project Planning/Project_Roadmap_Company_Set_Up - Sidharth Shanmugam.xlsx
+  - file:
+    name: Project Roles
+    filepath: AppBar - What's On Project Plan/Project Planning/Project Roles.pdf
+  - file:
+    name: Business Plan & Marketing Strategy
+    filepath: AppBar - What's On Project Plan/Project Planning/Business Plan and Marketing Strategy - 03-06-2023.pdf
+
+
+
+- category:
+  image: software-test.jpeg
+  title: Meeting Minutes
+  files:
+  - file:
+    name: May
+    filepath: AppBar - What's On Project Plan/Meeting Minutes/May.zip
+  - file:
+    name: April
+    filepath: AppBar - What's On Project Plan/Meeting Minutes/April.zip
+  - file:
+    name: March
+    filepath: AppBar - What's On Project Plan/Meeting Minutes/March.zip
+  - file:
+    name: February
+    filepath: AppBar - What's On Project Plan/Meeting Minutes/February.zip
+  - file:
+    name: October through February
+    filepath: AppBar - What's On Project Plan/Meeting Minutes/October through February.zip
+  - file:
+    name: Record of Project Updates
+    filepath: AppBar - What's On Project Plan/Meeting Minutes/Record of Project Updates.pdf

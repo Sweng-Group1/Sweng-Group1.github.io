@@ -3,74 +3,77 @@
   title: Presentations
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Final Presentation
+    filepath: Marketing & Design/Presentations/Final Presentation.zip
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Tender Presentation
+    filepath: Marketing & Design/Presentations/Tender Presentation.zip
 
 - category:
   image: software-test.jpeg
   title: Design Documentation
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: User Profiles
+    filepath: Marketing & Design/Design Documentation/User Profiles - Sarujan Thevathasan - 22_11_2022.docx.pdf
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Customer Profile
+    filepath: Marketing & Design/Design Documentation/Customer Profile - Sophie Maw - 17_11_2022.docx.pdf
+  - file:
+    name: Design Research
+    filepath: Marketing & Design/Design Documentation/Design Research - Sophie Maw - 17_11_2022.docx.pdf
+  - file:
+    name: User Profiles
+    filepath: Marketing & Design/Design Documentation/User Profiles - Sarujan Thevathasan - 22_11_2022.docx.pdf
   
 - category:
   image: software-test.jpeg
   title: Branding
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: App Logos Final
+    filepath: Marketing & Design/Branding/App Logos Final.zip
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Company Logos
+    filepath: Marketing & Design/Branding/Company Logos.zip
+  - file:
+    name: Themed Logo Examples
+    filepath: Marketing & Design/Branding/Themed Logo Examples.zip
+  - file:
+    name: App Logos Draft
+    filepath: Marketing & Design/Branding/App Logos Draft.zip
 
 - category:
   image: software-test.jpeg
   title: YUSU Declaration of Interest
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Signed Declaration
+    filepath: Marketing & Design/YUSU Declaration of Interest/YUSU Declaration of Interest v1.2 SIGNED Sidharth Shanmugam.pdf
 
 - category:
   image: software-test.jpeg
   title: Surveys
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Survey Archive
+    filepath: Marketing & Design/Surveys/Survey Archive.zip
 
 - category:
   image: software-test.jpeg
   title: Development Assets
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Placeholder Icons Archive
+    filepath: Marketing & Design/Development Assets/Placeholder icons.zip
 
 - category:
   image: software-test.jpeg
-  title: HTML Tour Planning
+  title: HTML-Tour Planning
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Written Sections Plan
+    filepath: Marketing & Design/HTML Tour Planning/HTML Tour Written Sections - Matteo Pearce, Sidharth Shanmugam - 24_5_2023.pdf
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Assets Plan
+    filepath: Marketing & Design/HTML Tour Planning/HTML Tour - Oliver Partridge - 8_5_2023.pdf

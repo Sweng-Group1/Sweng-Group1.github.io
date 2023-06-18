@@ -3,20 +3,14 @@
   title: Testing & Integration Plans
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Plans Archive
+    filepath: QC & Testing/Testing and Integration Plans/Plans Archive.zip
 
 - category:
   image: software-test.jpeg
   title: Testing & Integration Reports
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Report Archive
+    filepath: QC & Testing/Testing and Integration Reports/Reports Archive.zip
   

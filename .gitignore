@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=jekyll,visualstudiocode,macos,windows
 
 ### Jekyll ###
-# _site/
+_site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata

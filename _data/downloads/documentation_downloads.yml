@@ -3,63 +3,66 @@
   title: Commenting Exemplar
   files:
   - file:
-    name: This is a test doc
-    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+    name: Server App
+    filepath: Documentation/Commenting Exemplar/CommentingExemplar_MapController.txt
   - file:
-    name: This is a test doc
-    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+    name: Client App
+    filepath: Documentation/Commenting Exemplar/CommentingExemplar_SidebarScene.txt
 
 - category:
   image: software-test.jpeg
   title: Documentation Admin
   files:
   - file:
-    name: This is a test doc
-    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+    name: Task Costings
+    filepath: Documentation/Documentation Admin/Documentation Team Tasks Costing - Jonathan Cooke 09_02_2023.xlsx
   - file:
-    name: This is a test doc
-    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+    name: Final Hand-in Requirements
+    filepath: Documentation/Documentation Admin/Final Hand-in Requirements Outline - 05-06-2023.pdf
+  - file:
+    name: GDrive Restructure Plan
+    filepath: Documentation/Documentation Admin/Google Drive Restructure 23_05_2023.pdf
   
 - category:
   image: software-test.jpeg
-  title: First Iteration
+  title: Iterations
   files:
   - file:
-    name: This is a test doc
-    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
-  - file:
-    name: This is a test doc
-    filepath: Functional Specification/Group 1 - AppBar - Functional Specification - 1_1_0.pdf
+    name: 1st Iteration Demo Materials
+    filepath: Documentation/Iterations/First Iteration Demo Supplementary Materials.pdf
 
 - category:
   image: software-test.jpeg
   title: QA Manual
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: QA Manual 2.0
+    filepath: Documentation/QA Manual/AppBar_QA_Manual_Version_2_0.pdf
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: QA Manual 1.4
+    filepath: Documentation/QA Manual/Group 1 - AppBar - QA Manual - Version 1_4.pdf
+  - file:
+    name: QA Manual 1.3
+    filepath: Documentation/QA Manual/Group_1_QA_Manual_Version_1_3.pdf
+  - file:
+    name: QA Manual Draft
+    filepath: Documentation/QA Manual/QA Manual Draft - 02-12-2022.pdf
+
+- category:
+  image: software-test.jpeg
+  title: QA Manual Review
+  files:
+  - file:
+    name: 2nd Iteration Review
+    filepath: Documentation/QA Manual Review/2nd Iteration Review.zip
 
 - category:
   image: software-test.jpeg
   title: User Manual
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: User Manual
+    filepath: Documentation/User Manual/AppBar - What's On_ User Manual.pdf
   - file:
-    name: This is a test doc
-    filepath: test.txt
-
-- category:
-  image: software-test.jpeg
-  title: Archive
-  files:
-  - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: User Manual Research
+    filepath: Documentation/User Manual/User Manual Research.pdf

@@ -3,42 +3,45 @@
   title: Financial Business Plan
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Business Plan
+    filepath: Finance/Finance Business Plan/Financial Business Plan 2.0.xlsx
 
 - category:
   image: software-test.jpeg
   title: Financial Reports
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Final Finance Report
+    filepath: Finance/Finance Reports/Final_Finance_Report.pdf
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Report 3
+    filepath: Finance/Finance Reports/Group 1 - AppBar - Financial Report 3.xlsx
+  - file:
+    name: Report 2
+    filepath: Finance/Finance Reports/Group 1 - AppBar - Financial Report 2.xlsx
+  - file:
+    name: Report 1
+    filepath: Finance/Finance Reports/Group 1 - AppBar - Financial Report 1.xlsx
+  - file:
+    name: Projected Cashflow
+    filepath: Finance/Finance Reports/Projected_Cash_Flow.xlsx
   
 - category:
   image: software-test.jpeg
   title: Timesheet
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Part 2
+    filepath: Finance/Timesheets/Group 1 Timesheet Part 2.xlsx
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Part 1
+    filepath: Finance/Timesheets/Group 1 Timesheet Part 1.xlsx
 
 - category:
   image: software-test.jpeg
   title: Archive
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Archive.zip
+    filepath: Finance/Archive/Archive.zip
 

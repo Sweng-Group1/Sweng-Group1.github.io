@@ -3,63 +3,96 @@
   title: Client App
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Client App Main
+    filepath: Development/Client App/client-app-desktop-main.zip
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Client App Beta
+    filepath: Development/Client App/client-app-desktop-beta.zip
+  - file:
+    name: UML Diagrams
+    filepath: Development/Client App/UML Diagram.zip
+  - file:
+    name: UploadScene Design Docs
+    filepath: Development/Client App/UploadScene Design Docs.zip
 
 - category:
   image: software-test.jpeg
   title: Server Software
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Server App Main
+    filepath: Development/Server Software/server-app-main.zip
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Server Documentation
+    filepath: Development/Server Software/Server Software Documentation.pdf
+  - file:
+    name: Server Plan
+    filepath: Development/Server Software/Server Software Plan.pdf
+  - file:
+    name: Server Research
+    filepath: Development/Server Software/Server Software Research.pdf
+  - file:
+    name: Server Core Microservice Diagram
+    filepath: Development/Server Software/Server_CoreMicroservice_Diagram - Sidharth Shanmugam - 13_02_2023.png
+  - file:
+    name: Server Media Microservice Diagram
+    filepath: Development/Server Software/Server_MediaMicroservice_diagram - Sidharth Shanmugam - 13_02_2023.png
+  - file:
+    name: Server Diagram Description
+    filepath: Development/Server Software/Server_Diagram_Description - Sidharth Shanmugam - 13_02_2023.rtf
+  - file:
+    name: Server App Spikes
+    filepath: Development/Server Software/server-app-spikes.zip
   
 - category:
   image: software-test.jpeg
   title: Example Multimedia Presentations
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
-  - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Example XML Presentations
+    filepath: Development/Example Multimedia Presentation/Example XML Presentations.pdf
 
 - category:
   image: software-test.jpeg
   title: Intergroup Contracts
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Contracts Received
+    filepath: Development/Intergroup Contracts/From Penelope.zip
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Contracts Sent
+    filepath: Development/Intergroup Contracts/To Penelope.zip
+  - file:
+    name: Acceptance Test Feedback to Penelope
+    filepath: Development/Intergroup Contracts/Acceptance Test Feedback to Penelope.pdf
+  - file:
+    name: Preliminary Draft Software Contract
+    filepath: Development/Intergroup Contracts/Preliminary Draft Software Contract - Srikanth Jakka.pdf
 
 - category:
   image: software-test.jpeg
   title: Project Wide Specification (PWS)
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Standard XSD File
+    filepath: Development/Project Wide Specification (PWS)/standard.xsd
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: XML Specification Draft
+    filepath: Development/Project Wide Specification (PWS)/XML Specification Draft - 02-11-2022.pdf
+  - file:
+    name: Initial Proposal
+    filepath: Development/Project Wide Specification (PWS)/Group 1 Initial Proposal for XML Spec.pdf
 
 - category:
   image: software-test.jpeg
   title: Version Control
   files:
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Server App Git Chart
+    filepath: Development/Version Control/server-app Git Commit History Visualisation - Srikanth Jakka.png
   - file:
-    name: This is a test doc
-    filepath: test.txt
+    name: Client App Git Chart
+    filepath: Development/Version Control/client-app-desktop Git Commit History Visualisation - Srikanth Jakka.png
+  - file:
+    name: Git Tutorial
+    filepath: Development/Version Control/Simple Tutorial on using VCS for SWEng Group 1.docx
