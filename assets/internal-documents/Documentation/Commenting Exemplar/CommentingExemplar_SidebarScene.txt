@@ -1,0 +1,435 @@
+package sweng.group.one.client_app_desktop.sceneControl;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
+import javax.swing.plaf.ScrollPaneUI;
+
+import sweng.group.one.client_app_desktop.presentation.Presentation;
+
+/**
+ * Modified JPanel sliding viewer to hold presentation slides which can overlay other JPanels.
+ * 
+ * @author Will Hinton, Jonathan Cooke & Sophie Maw
+ * @since 24/05/2023
+ * @version 0.2
+ *
+ */
+public class SidebarScene extends JPanel {
+	
+	// -------------------------------------------------------------- //
+	// --------------------- Initialisations ------------------------ //
+	// -------------------------------------------------------------- //
+	
+	private static final long serialVersionUID = 1L;
+	private boolean isOpen;
+	
+	// The sidebar itself. Packing a JPanel into a JPanel isn't great, but it means
+	// We can quickly hide the sidebar as a whole. - Will Hinton
+	
+	private JPanel background;
+	private JPanel sideBar;
+	private JPanel searchBar;
+	
+	// Lower portion, containing presentations
+	private JPanel presPanel;
+	private List<Presentation> presentations;
+	
+	private JTextField searchTextField;
+	private JButton minimiseButton;
+	private JButton maximiseButton;
+	private JButton searchButton;
+	private JScrollPane presScroll;
+	
+	private boolean presScrollEnabled = false;
+	
+	private GridBagConstraints gbc;
+	
+	// ----------- CONSTANTS -------------
+	
+	private final static int searchBarInset = 10;
+	private final static int rectCurveRadius = 20;
+	
+	private final static Color sideBarBlue = new Color(32,41,57);
+	
+	// -------------------------------------------------------------- //
+	// ----------------------- CONSTRUCTOR -------------------------- //
+	// -------------------------------------------------------------- //
+	
+	/**
+	 * 
+	 * @param searchAction Accepts an action listener for when the search
+	 * button is pressed.
+	 */
+	public SidebarScene(ActionListener searchAction) {
+		// Initialise
+		gbc = new GridBagConstraints();          
+		this.setLayout(new GridBagLayout());
+		
+		setUpSearchBar(searchAction);
+		setUpSideBar(searchAction);
+		setUpBackground();
+		
+		isOpen = true;
+	}
+	
+	// -------------------------------------------------------------- //
+	// -------------------------- LAYOUT ---------------------------- //
+	// -------------------------------------------------------------- //
+	
+	/**
+	 * Creates a JPanel which is capable of being dynamically redrawn for maximised and minimised states
+	 * Search bar and presentation viewer with scroll bar are added into the background panel
+	 */
+	private void setUpBackground() {
+		// -------------- OBJECTS AND APPEARANCE ------------------
+        
+        // The whole sidebar object
+        // Can be in 'minimised' or 'maximised' mode
+		
+		background = new JPanel() {
+			
+			int sideBarDrawnX; //this is moveable with maximising and minimising 
+			int gapWidth;
+			int maximisePos;
+			int minimisePos;
+			boolean isMoving;
+			boolean isMaximised;
+			int curveRadius;
+			
+			/**
+			 * Custom graphics behaviour which allows for redrawing of the background
+			 * depending upon whether the sidebar is maximised or minimised
+			 */
+			@Override
+			public void paintComponent(Graphics g) {
+				super.paintComponent(g);
+				
+				int recWidth;
+				if (isOpen) {
+					recWidth = this.getWidth();
+				}
+				else {
+					recWidth = 0;
+				}
+				
+				int recHeight = this.getHeight();
+					
+				g.setColor(sideBarBlue);
+				g.fillRoundRect(0,0,recWidth,recHeight,rectCurveRadius,rectCurveRadius);
+			}
+			
+			public void repaintComponent(Graphics g, float position) {
+				super.paintComponent(g);
+				
+				int recWidth = (int)(this.getWidth() * position);				
+				int recHeight = this.getHeight();
+					
+				g.setColor(sideBarBlue);
+				g.fillRoundRect(0,0,recWidth,recHeight,rectCurveRadius,rectCurveRadius);
+			}
+		};
+		
+        background.setLayout(new GridBagLayout());  
+        background.setName("SideBarScene");
+
+        // The maximise button 
+     	// Appears when the sidebar is minimised
+     	maximiseButton = new JButton(">>");
+
+     	maximiseButton.addActionListener(new ActionListener() {
+     		// Maximise on button click
+     		@Override
+     		public void actionPerformed(ActionEvent e) {
+     			open();			
+     		}
+     	});
+
+     	maximiseButton.setName("Maximise");
+     	maximiseButton.setVisible(false); // Hide when maximised        
+        
+        // ---------- LAYOUT --------- //
+     	gbc = new GridBagConstraints();
+     	
+        // searchBar
+        gbc.gridx = 0;
+     	gbc.gridy = 0;
+     	gbc.gridwidth = 1;
+     	gbc.gridheight = 1;
+     	gbc.weightx = 1;
+		gbc.weighty = 0;
+     	gbc.fill = GridBagConstraints.HORIZONTAL;
+     	gbc.anchor = GridBagConstraints.CENTER;
+     	background.add(searchBar, gbc);
+     	
+     	// sideBar
+     	gbc.gridx = 0;
+     	gbc.gridy = 1;
+     	gbc.gridwidth = 1;
+     	gbc.gridheight = 1;
+     	gbc.weightx = 1;
+		gbc.weighty = 1;
+     	gbc.fill = GridBagConstraints.BOTH;
+     	gbc.anchor = GridBagConstraints.ABOVE_BASELINE_LEADING;
+     	background.add(sideBar, gbc);
+     	
+     	// maximiseButton
+     	gbc.gridx = 0;
+     	gbc.gridy = 1;
+     	gbc.fill = GridBagConstraints.VERTICAL;
+     	gbc.anchor = GridBagConstraints.ABOVE_BASELINE_LEADING;
+     	background.add(maximiseButton, gbc);
+     	//background.setBorder(BorderFactory.createLineBorder(Color.black));
+     	
+     	// add background to JPanel
+     	gbc.gridx = 0;
+     	gbc.gridy = 0;
+     	gbc.gridwidth = 0;
+     	gbc.gridheight = 1;
+     	gbc.weightx = 1;
+		gbc.weighty = 1;
+     	gbc.fill = GridBagConstraints.BOTH;
+     	gbc.anchor = GridBagConstraints.ABOVE_BASELINE_LEADING;
+     	this.add(background, gbc);
+	}
+	
+	/**
+	 * Creates a searchbar which sits over the top of the sidebar at all times
+	 * Adds: JTextField and JButtons (search, minimise) to the searchBar JPanel.
+	 */
+	private void setUpSearchBar(ActionListener searchAction) {
+		// --------- GENERATE ELEMENTS -------------- //
+		
+		searchBar = new JPanel() {
+			@Override
+			public void paintComponent(Graphics g) {
+				int recWidth = this.getWidth() - searchBarInset*2;
+				int recHeight = this.getHeight() - searchBarInset;
+					
+				g.setColor(Color.WHITE);
+				g.fillRoundRect(	searchBarInset,searchBarInset,recWidth,recHeight,
+									rectCurveRadius,rectCurveRadius);
+			}
+		};
+        searchBar.setLayout(new GridBagLayout());  
+        searchBar.setName("SideBar");	
+		
+		// Search text input box
+		searchTextField = new JTextField() {
+			@Override
+			public void paintComponent(Graphics g) {
+				super.paintComponent(g);
+			}
+		};
+		searchTextField.setName("Searchbar");
+		searchTextField.setBorder(new LineBorder(Color.WHITE));
+		searchTextField.setFont(new Font("Ariel", Font.PLAIN, 14));
+		searchTextField.setHorizontalAlignment(JTextField.CENTER);
+		
+		// Search confirm button
+		searchButton = new JButton("S");
+		searchButton.setName("Search");
+		// Search occurs when clicked
+		searchButton.addActionListener(searchAction);
+		
+		// The minimise button
+        // Appears when the sidebar is maximised
+        minimiseButton = new JButton("<<");
+		
+        minimiseButton.addActionListener(new ActionListener() {
+        	// Minimise on button click
+        	@Override
+        	public void actionPerformed(ActionEvent e) {
+        		close();	
+        	}
+		});
+		minimiseButton.setName("Minimise");
+		
+		
+		// ------------ LAYOUT ------------- //
+		gbc = new GridBagConstraints();
+		int inset = searchBarInset;
+		
+		// Search text bar
+		gbc.gridx = 0;
+		gbc.gridy = 0;
+		gbc.fill = GridBagConstraints.BOTH;
+		gbc.weightx = 1;
+		gbc.ipadx = 300;
+		gbc.insets = new Insets(inset*2, inset*2, inset, 0);
+		searchTextField.setMinimumSize(new Dimension(200, searchButton.getHeight()));
+		searchBar.add(searchTextField, gbc);
+		
+		// Search button
+		gbc.gridx = 1;
+		gbc.weightx = 0;
+		gbc.gridy = 0;
+		gbc.ipadx = 0;
+		gbc.insets = new Insets(inset*2, 0,inset, 0);
+		gbc.fill = GridBagConstraints.NONE;
+		searchBar.add(searchButton, gbc);
+		
+		// Minimise button
+		gbc.gridx = 2;
+		gbc.gridy = 0;
+		gbc.insets = new Insets(inset*2, 0, inset, inset*2);
+		searchBar.add(minimiseButton, gbc);
+	}
+	
+	
+	/**
+	 *  Creates the lower portion of the SidebarScene containing the presentation viewer and customised scroll bar
+	 *  Adds: Presentation JPanel to a JScrollPane
+	 */
+	private void setUpSideBar(ActionListener searchAction) {
+		
+		sideBar = new JPanel();
+		
+        sideBar.setLayout(new GridBagLayout());  
+        sideBar.setName("SideBar");	
+        sideBar.setOpaque(false);		
+        
+		// Presentation Panel
+		presPanel = new JPanel();
+		presPanel.setLayout(new GridBagLayout());
+		presPanel.setName("Presentations");
+		presPanel.setBackground(sideBarBlue);
+				
+		// Scroll Bar
+		presScroll = new JScrollPane(presPanel);
+		presScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		presScroll.setBackground(sideBarBlue);
+		
+		//---------------------- LAYOUT --------------------------//
+		gbc = new GridBagConstraints();		
+		
+		// Scroll bar
+		gbc.gridy = 1;
+		gbc.gridx = 0;
+		gbc.gridwidth = 1;
+		gbc.weightx = 1;
+		gbc.weighty = 1;
+		gbc.fill = GridBagConstraints.BOTH;
+		gbc.insets = new Insets(10,10,10,10);
+		
+		sideBar.setBackground(sideBarBlue);
+		
+		if (presScrollEnabled) {
+			sideBar.add(presScroll, gbc);
+		}
+	
+		sideBar.setPreferredSize(new Dimension(350, 100));
+		
+	}
+	
+	// -------------------------------------------------------------- //
+	// ----------------------- WINDOW BEHAVIOUR --------------------- //
+	// -------------------------------------------------------------- //
+	
+	/**
+	 * Sets Sidebar parameters for when the Sidebar is maximised (open)
+	 * When run will trigger the sidebar to be redrawn with any animations
+	 */
+	public void open() {
+		isOpen = true;
+		maximiseButton.setVisible(false);
+		minimiseButton.setVisible(true);
+		sideBar.setVisible(true);
+	}
+	
+	/**
+	 * Sets Sidebar parameters for when the Sidebar is maximised (open)
+	 * When run will trigger the sidebar to be redrawn with any animations
+	 */
+	public void close() {
+		isOpen = false;
+		maximiseButton.setVisible(true);
+		minimiseButton.setVisible(false);
+		sideBar.setVisible(false);
+	}
+	
+	/**
+	 * Sets Sidebar parameters for when the Sidebar is maximised (open)
+	 * When run will trigger the sidebar to be redrawn with any animations
+	 */
+	public boolean isOpen() {
+		return isOpen;
+	}
+	
+	// -------------------------------------------------------------- //
+	// ----------------------- PRESENTATIONS ------------------------ //
+	// -------------------------------------------------------------- //
+	
+	/** 
+	 * Moves P to the top of the presentation stack 
+	 */
+	public void goTo(Presentation p) {
+		// What we might want to do is make a presentationPanel for the presentation being viewed
+		// At the moment we just put this one to the top of the list, and then move to the top of 
+		// the scrollpane.
+		List<Presentation> newPresentations = new ArrayList<Presentation>();
+		presentations.remove(p); // Remove p from the list.
+		newPresentations.add(p);
+		newPresentations.addAll(presentations);
+		
+		replacePres(newPresentations);
+		
+		presScroll.getVerticalScrollBar().setValue(0);
+		
+	}
+	
+	/**
+	 *  Replaces the current presentation list with p 
+	 */
+	public void replacePres(List<Presentation> p) {
+		GridBagConstraints gbc = new GridBagConstraints();
+		gbc.fill = GridBagConstraints.BOTH;
+		gbc.gridwidth = 1;
+		gbc.gridheight = 1;
+		gbc.gridx = 0;
+		gbc.gridy = 0;
+		gbc.weightx = 1;
+		gbc.weighty = 1;
+		presPanel.removeAll();
+		presentations = p;
+		for (int i = 0; i < p.size(); i++) {
+			Presentation pres = p.get(i);
+			gbc.gridy = i;
+			presPanel.add(pres, gbc);
+			pres.setEnabled(true);
+			pres.setBackground(sideBarBlue);
+		}
+	}
+	
+	// -------------------------------------------------------------- //
+	// ----------------------- SEARCH ------------------------------- //
+	// -------------------------------------------------------------- //
+	
+	/** 
+	 * Gets the content of the searchbar 
+	 * */
+	public String getSearchText() {
+		return searchTextField.getText();
+	}
+}
